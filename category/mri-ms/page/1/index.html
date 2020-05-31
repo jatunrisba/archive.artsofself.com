@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>MRI MS | artsofself</title>
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="http://archive.artsofself.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_fonts-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="sumoselect-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/sumoselect.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mCustomScrollbar-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_googlefonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=greek,latin,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_frontend-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/styles.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="SFSIPLUSmainCss-css" href="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/css/sfsi-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="http://archive.artsofself.com/wp-content/themes/twentytwelve/style.css" type="text/css" media="all">
+
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.sumoselect.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.fullscreen-0.4.1.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_validation":"This is not a valid email address.","bwg_search_result":"There are no images matching your search.","bwg_select_tag":"Select Tag","bwg_order_by":"Order By","bwg_search":"Search","bwg_show_ecommerce":"Show Ecommerce","bwg_hide_ecommerce":"Hide Ecommerce","bwg_show_comments":"Show Comments","bwg_hide_comments":"Hide Comments","bwg_restore":"Restore","bwg_maximize":"Maximize","bwg_fullscreen":"Fullscreen","bwg_exit_fullscreen":"Exit Fullscreen","bwg_search_tag":"SEARCH...","bwg_tag_no_match":"No tags found","bwg_all_tags_selected":"All tags selected","bwg_tags_selected":"tags selected","play":"Play","pause":"Pause","is_pro":"","bwg_play":"Play","bwg_pause":"Pause","bwg_hide_info":"Hide info","bwg_show_info":"Show info","bwg_hide_rating":"Hide rating","bwg_show_rating":"Show rating","ok":"Ok","cancel":"Cancel","select_all":"Select all","lazy_load":"0","lazy_loader":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/photo-gallery\/images\/ajax_loader.png","front_ajax":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/scripts.min.js"></script>
+
+
+
+<script>
+	window.addEventListener("sfsi_plus_functions_loaded",function(){
+		var body= document.getElementsByTagName('body')[0];
+		console.log(body);
+		body.classList.add("sfsi_plus_3.26");
+	})
+	// window.addEventListener('sfsi_plus_functions_loaded',function(e) {
+	// 	jQuery("body").addClass("sfsi_plus_3.26")
+	// });
+
+	function sfsi_plus_processfurther(ref) {
+		var feed_id = '';
+		var feedtype = 8;
+		var email = jQuery(ref).find('input[name="data[Widget][email]"]').val();
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if ((email != "Enter your email") && (filter.test(email))) {
+			if (feed_id != "") {
+				if (feedtype == "8") {
+					var url = "https://www.specificfeeds.com/widgets/subscribeWidget/" + feed_id + "/" + feedtype;
+					window.open('', "popupwindow", "scrollbars=yes,width=1080,height=760");
+					ref.target = "popupwindow";
+					ref.action = url;
+					return true;
+				} else {
+					return false;
+				}
+			}
+		} else {
+			alert("Please enter email address");
+			jQuery(ref).find('input[name="data[Widget][email]"]').focus();
+			return false;
+		}
+	}
+</script>
+<style>
+	.sfsi_plus_subscribe_Popinner {
+		width: 100% !important;
+		height: auto !important;
+		border: 1px solid #b5b5b5 !important;
+		padding: 18px 0px !important;
+		background-color: #ffffff !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner form {
+		margin: 0 20px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner h5 {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		margin: 0 0 10px !important;
+		padding: 0 !important;
+	}
+
+	.sfsi_plus_subscription_form_field {
+		margin: 5px 0 !important;
+		width: 100% !important;
+		display: inline-flex;
+		display: -webkit-inline-flex;
+	}
+
+	.sfsi_plus_subscription_form_field input {
+		width: 100% !important;
+		padding: 10px 0px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-moz-placeholder {
+		/* Firefox 18- */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-moz-placeholder {
+		/* Firefox 19+ */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=submit] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		background-color: #dedede !important;
+	}
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="archive category category-mri-ms category-4 do-etfw custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://archive.artsofself.com/" title="artsofself" rel="home">artsofself</a></h1>
+			<h2 class="site-description">Just another WordPress site</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul>
+<li><a href="http://archive.artsofself.com/">Home</a></li><li class="page_item page-item-920"><a href="http://archive.artsofself.com/about/">ABOUT</a></li>
+<li class="page_item page-item-1118"><a href="http://archive.artsofself.com/inter-esse/">INTER-ESSE</a></li>
+<li class="page_item page-item-1574"><a href="http://archive.artsofself.com/jatun-risba/">Jatun Risba</a></li>
+<li class="page_item page-item-1127"><a href="http://archive.artsofself.com/likovno-izrazanje/">Likovno izražanje</a></li>
+<li class="page_item page-item-1310"><a href="http://archive.artsofself.com/mri-ms/">MRI MS</a></li>
+<li class="page_item page-item-495 page_item_has_children"><a href="http://archive.artsofself.com/predstavitev/">O US</a>
+<ul class="children">
+	<li class="page_item page-item-67"><a href="http://archive.artsofself.com/predstavitev/us-so-ker-niso/">US SO, KER NISO</a></li>
+	<li class="page_item page-item-11"><a href="http://archive.artsofself.com/predstavitev/postani-umetnik-sebstva/">POSTANI UMETNIK SEBSTVA</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2"><a href="http://archive.artsofself.com/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-72 page_item_has_children"><a href="http://archive.artsofself.com/tehnologije/">TEHNOLOGIJE</a>
+<ul class="children">
+	<li class="page_item page-item-74"><a href="http://archive.artsofself.com/tehnologije/detournement/">DÉTOURNEMENT</a></li>
+	<li class="page_item page-item-86"><a href="http://archive.artsofself.com/tehnologije/fokusologija/">FOKUSOLOGIJA</a></li>
+	<li class="page_item page-item-1091"><a href="http://archive.artsofself.com/tehnologije/forma-viva/">FORMA VIVA</a></li>
+	<li class="page_item page-item-90"><a href="http://archive.artsofself.com/tehnologije/imagazinacija/">IMAGAZINACIJA</a></li>
+	<li class="page_item page-item-89"><a href="http://archive.artsofself.com/tehnologije/izleti-in-ture/">IZLETI IN TURE</a></li>
+	<li class="page_item page-item-96"><a href="http://archive.artsofself.com/tehnologije/korespondenca/">JAVNO-PRIVATNA KORESPONDENCA</a></li>
+	<li class="page_item page-item-107"><a href="http://archive.artsofself.com/tehnologije/jutranje-misli-in-samosprasevanje/">JUTRANJE MISLI in SAMOSPRAŠEVANJE</a></li>
+	<li class="page_item page-item-101"><a href="http://archive.artsofself.com/tehnologije/sprehodialogi/">MAJEVTIČNI SPREHODIALOGI</a></li>
+	<li class="page_item page-item-117"><a href="http://archive.artsofself.com/tehnologije/preobratni-slovar/">PREOBRATNI SLOVAR</a></li>
+	<li class="page_item page-item-122"><a href="http://archive.artsofself.com/tehnologije/strahopremet/">STRAHOPREMET</a></li>
+	<li class="page_item page-item-126"><a href="http://archive.artsofself.com/tehnologije/zvezek-idej/">ZVEZEK IDEJ</a></li>
+</ul>
+</li>
+<li class="page_item page-item-287"><a href="http://archive.artsofself.com/pomagala/">POMAGALA</a></li>
+<li class="page_item page-item-134"><a href="http://archive.artsofself.com/besednjak/">BESEDNJAK</a></li>
+<li class="page_item page-item-26 page_item_has_children"><a href="http://archive.artsofself.com/eticni-kodeks/">ETIČNI KODEKS</a>
+<ul class="children">
+	<li class="page_item page-item-40"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-mediji/">US IN MEDIJI</a></li>
+	<li class="page_item page-item-43"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-festivali/">US IN FESTIVALI</a></li>
+	<li class="page_item page-item-53"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-avtorsko-pravo/">US IN AVTORSKO PRAVO</a></li>
+</ul>
+</li>
+<li class="page_item page-item-139"><a href="http://archive.artsofself.com/predhodniki/">PREDHODNIKI</a></li>
+<li class="page_item page-item-149"><a href="http://archive.artsofself.com/zahvale/">ZAHVALE</a></li>
+<li class="page_item page-item-130 page_item_has_children"><a href="http://archive.artsofself.com/kontakt/">KONTAKT</a>
+<ul class="children">
+	<li class="page_item page-item-128"><a href="http://archive.artsofself.com/kontakt/o-avtorju-strani/">O AVTORJU STRANI</a></li>
+</ul>
+</li>
+</ul></div>
+		</nav>
+
+			</header>
+
+	<div id="main" class="wrapper">
+
+	<section id="primary" class="site-content">
+		<div id="content" role="main">
+
+					<header class="archive-header">
+				<h1 class="archive-title">Category Archives: <span>MRI MS</span></h1>
+
+						</header>
+
+			
+	<article id="post-1557" class="post-1557 post type-post status-publish format-standard hentry category-mri-ms tag-apulia tag-chapel-of-st-paul tag-dancing-healing-ritual tag-galatina tag-giada-totaro tag-jatun-risba tag-lecce tag-manifatture-knos tag-mri-ms tag-possession tag-salento tag-san-paolo tag-steam-atelier tag-taranta tag-tarantism">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/mri-ms-is-landing-in-salento/" rel="bookmark">MRI MS is landing in Salento</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/mri-ms-is-landing-in-salento/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p>Recently, Jatun Risba spent 4 days in Salento, the “heel” of the Italian “boot”,  for a quick survey of the territory and its majestic material culture. Her first encounter with this land, its ancient folk traditions and its open, hospitable inhabitants, was extremely inspiring and rewarding. <strong>From September 2018 on, she will undertake an Artist in Residence program at <a href="https://steamatelier.eu/" target="_blank" rel="noopener noreferrer">STEAM Atelier</a> in Lecce </strong>that will be divided into slots spread over a <strong>minim</strong><span class="text_exposed_show"><strong>um of 12 months</strong>.</span><span style="font-size: 1rem;">The residency will allow Jatun to continue the field research about traditional possession rituals and passage rites, a study she had started in Ethiopia back in 2015, as well as to create and present new developments of her life-long Intermedia Art project </span><a style="font-size: 1rem;" href="http://artsofself.com/mri-ms/">MRI MS. My Resting In Myself Sane.</a></p>
+<div class="text_exposed_show">
+<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSTEAMAtelier%2Fposts%2F2157997444419543&width=500" width="500" height="889" frameborder="0" scrolling="no"></iframe></p>
+<p>Before each new Art event, an open steam lab (promoted by <a href="https://www.facebook.com/STEAMAtelier/" target="_blank" rel="noopener noreferrer">STEAM Atelier</a> & <a href="https://www.facebook.com/FabLabKnos/" target="_blank" rel="noopener noreferrer">Fab Lab Lecce Knos</a>) will be held, during which the basis of <strong>the technological know-how employed in the project will be openly shared and collectivized with the local community.</strong> This is how people attending the workshops will immediately become an active part of the project and its organization in a <strong>decentralized modality of work</strong>.</p>
+<p>Salento is the land of the <strong>Taranta, the Dance of the Spider, an ancient dancing healing ritual.</strong> During her recent short stay in Apulia, Jatun spent almost two full days in <span class="_5afx"><span class="_58cl _5afz" aria-label="hashtag">Galatina,</span></span> the birthplace of the phenomenon of Tarantism. To get an idea of what tarantism was about, here is <strong>the documentary La taranta produced by Gianfranco Mingozzi</strong>:</p>
+<p><iframe width="625" height="469" src="https://www.youtube.com/embed/wmbXOdI1yhE?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+<p>The recordings from the docu-film were made inside the <strong>Chapel of St Paul in Galatina</strong>, the place where the first manifestationts of taranta occurred. The narrative of <em>taranta</em> tells us that it is only San Paolo (the Saint depicted on the altar in the photo bellow), who can release the “tarantata” from the malady caused by the spider bite and it is to San Paolo that the victim appeals for release during her ritual dancing.</p>
+<p><a href="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/37017925_844597089084498_6487568866774876160_n.jpg?_nc_cat=0&oh=d761e6c8141a4e801c9a11f3974e6dd7&oe=5BDF28B4"><img class="alignleft" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/37017925_844597089084498_6487568866774876160_n.jpg?_nc_cat=0&oh=d761e6c8141a4e801c9a11f3974e6dd7&oe=5BDF28B4" alt="" width="340" height="444"></a><a href="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/37013236_844597095751164_971286667644108800_n.jpg?_nc_cat=0&oh=38b47c00dd650abafc4e12d9f94389dd&oe=5BEC6229"><img class="alignnone" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/37013236_844597095751164_971286667644108800_n.jpg?_nc_cat=0&oh=38b47c00dd650abafc4e12d9f94389dd&oe=5BEC6229" alt="" width="340" height="555"></a></p>
+<p>However, the material culture of our time offers us a much different milieu in which to operate and <strong>the remedies for establishing an empowering life within a healthy community, should differ drastically from the ones used in pre-industrial agricultural societies. </strong>But how and what for?</p>
+<p>Like the Fb pages <a href="https://steamatelier.eu/" target="_blank" rel="noopener noreferrer">STEAM Atelier</a> and <span class="text_exposed_show"><a href="http://artsofself.com/mri-ms/">MRI MS. My Resting In Myself Sane</a></span> in order to be informed about the future steps of this inspiring journey. <strong> “Ahi!”</strong></p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a> and tagged <a href="http://archive.artsofself.com/tag/apulia/" rel="tag">Apulia</a>, <a href="http://archive.artsofself.com/tag/chapel-of-st-paul/" rel="tag">Chapel of St Paul</a>, <a href="http://archive.artsofself.com/tag/dancing-healing-ritual/" rel="tag">dancing healing ritual</a>, <a href="http://archive.artsofself.com/tag/galatina/" rel="tag">Galatina</a>, <a href="http://archive.artsofself.com/tag/giada-totaro/" rel="tag">Giada Totaro</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/lecce/" rel="tag">Lecce</a>, <a href="http://archive.artsofself.com/tag/manifatture-knos/" rel="tag">Manifatture Knos</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/possession/" rel="tag">possession</a>, <a href="http://archive.artsofself.com/tag/salento/" rel="tag">Salento</a>, <a href="http://archive.artsofself.com/tag/san-paolo/" rel="tag">San Paolo</a>, <a href="http://archive.artsofself.com/tag/steam-atelier/" rel="tag">STEAM Atelier</a>, <a href="http://archive.artsofself.com/tag/taranta/" rel="tag">taranta</a>, <a href="http://archive.artsofself.com/tag/tarantism/" rel="tag">Tarantism</a> on <a href="http://archive.artsofself.com/mri-ms-is-landing-in-salento/" title="1:42 pm" rel="bookmark"><time class="entry-date" datetime="2018-07-12T13:42:57+00:00">July 12, 2018</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	
+
+	<article id="post-1497" class="post-1497 post type-post status-publish format-standard hentry category-mri-ms tag-jatun-risba tag-miha-godec tag-mri-ms tag-mri-ms_vanitas-life-in-motion tag-my-resting-in-myself-sane tag-nina-dragicevic tag-rampa-lab tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/fresh-beginnings-and-my-resting-in-myself-sane/" rel="bookmark">Fresh beginnings and My Resting In Myself Sane</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/fresh-beginnings-and-my-resting-in-myself-sane/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p>In December 2017, the long-term art project <a href="http://artsofself.com/mri-ms/">MRI MS</a> (2015-) has reached a turning point. With the work <strong><a href="http://artsofself.com/mri-ms_vanitas-life-in-motion/">MRI MS_Vanitas. Life in motion</a> </strong>the deconstruction of the author’s self was considered completed. After that, the project’s name MRI MS is being spelled-out  <strong>“My Resting In Myself Sane”</strong>.</p>
+<p>Photos of MRI MS_Vanitas by Miha Godec.</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42659931_1911588132212965_6587116463415361536_o.jpg?_nc_cat=101&_nc_eui2=AeHqdoApofg6CyrZQdOXFL5e7dZikZlse95LrxpyR5aBBOfUB3ywbfpol1x87oNGt2Y909UeR-qxhtwbgWs1WTTrloDHvWVyB2I-8NXWyNseCg&_nc_ht=scontent-frx5-1.xx&oh=d7fcfeb299501bd5b89b028cd845ac90&oe=5D93B1A2"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42659931_1911588132212965_6587116463415361536_o.jpg?_nc_cat=101&_nc_eui2=AeHqdoApofg6CyrZQdOXFL5e7dZikZlse95LrxpyR5aBBOfUB3ywbfpol1x87oNGt2Y909UeR-qxhtwbgWs1WTTrloDHvWVyB2I-8NXWyNseCg&_nc_ht=scontent-frx5-1.xx&oh=d7fcfeb299501bd5b89b028cd845ac90&oe=5D93B1A2" width="1857" height="1238"></a></p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42519434_1911588102212968_5428115823443050496_o.jpg?_nc_cat=104&_nc_eui2=AeHBwWL5JDFIrNyG4hs2QOdcBWhWXVVkk28peHlSksTVbKcSf2XAEQ7B99mmFf-qz6wW5iHm5GhUCPCTE15bahmeKJyaBcNdkpnyjj8LgBfY0Q&_nc_ht=scontent-frx5-1.xx&oh=be097e33aa34bed146f0a28e000107a6&oe=5D841E7F"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42519434_1911588102212968_5428115823443050496_o.jpg?_nc_cat=104&_nc_eui2=AeHBwWL5JDFIrNyG4hs2QOdcBWhWXVVkk28peHlSksTVbKcSf2XAEQ7B99mmFf-qz6wW5iHm5GhUCPCTE15bahmeKJyaBcNdkpnyjj8LgBfY0Q&_nc_ht=scontent-frx5-1.xx&oh=be097e33aa34bed146f0a28e000107a6&oe=5D841E7F" width="1776" height="1184"></a></p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42530784_1911587978879647_77888987099824128_o.jpg?_nc_cat=103&_nc_eui2=AeHf--QYb6SWpnmsxL41yGFJo8A2DNc3mSln_7jaR4NxYv7QcfCs67KtB63iBZZtdQHvVkuirYS-kwVvX3CmL1MM4hZDQsO74C0okkZA68U3JA&_nc_ht=scontent-frx5-1.xx&oh=2643f75b78e1ae85c43187b0b44a5574&oe=5DC2D014"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42530784_1911587978879647_77888987099824128_o.jpg?_nc_cat=103&_nc_eui2=AeHf--QYb6SWpnmsxL41yGFJo8A2DNc3mSln_7jaR4NxYv7QcfCs67KtB63iBZZtdQHvVkuirYS-kwVvX3CmL1MM4hZDQsO74C0okkZA68U3JA&_nc_ht=scontent-frx5-1.xx&oh=2643f75b78e1ae85c43187b0b44a5574&oe=5DC2D014" width="1695" height="1130"></a></p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42533433_1911588362212942_3926294347057725440_o.jpg?_nc_cat=109&_nc_eui2=AeFcmfLyuPsTGkpmoJsV0LNY5O5EWfhk29ehQR552MIrRC5Y3LtTbdBLMGQJ-AA9SJ6lRQL5VJbBjqKnTCBTH8UnyKDnyCjvC1EX_Gfbrt1FGA&_nc_ht=scontent-frx5-1.xx&oh=c73250a7b63e7ac21ce1e757ccf5424f&oe=5DC34EF6"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/42533433_1911588362212942_3926294347057725440_o.jpg?_nc_cat=109&_nc_eui2=AeFcmfLyuPsTGkpmoJsV0LNY5O5EWfhk29ehQR552MIrRC5Y3LtTbdBLMGQJ-AA9SJ6lRQL5VJbBjqKnTCBTH8UnyKDnyCjvC1EX_Gfbrt1FGA&_nc_ht=scontent-frx5-1.xx&oh=c73250a7b63e7ac21ce1e757ccf5424f&oe=5DC34EF6" width="1904" height="1270"></a></p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a> and tagged <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/miha-godec/" rel="tag">Miha Godec</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/mri-ms_vanitas-life-in-motion/" rel="tag">MRI MS_Vanitas. Life in motion</a>, <a href="http://archive.artsofself.com/tag/my-resting-in-myself-sane/" rel="tag">My Resting In Myself Sane</a>, <a href="http://archive.artsofself.com/tag/nina-dragicevic/" rel="tag">Nina Dragičević</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/fresh-beginnings-and-my-resting-in-myself-sane/" title="6:16 pm" rel="bookmark"><time class="entry-date" datetime="2018-01-31T18:16:32+00:00">January 31, 2018</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1478" class="post-1478 post type-post status-publish format-standard hentry category-mri-ms category-uncategorized tag-abject tag-autopoietic-feedback-loop tag-brains tag-death tag-dying tag-feedback-loop tag-fischer-lichte tag-found-object tag-galerija-kapelica tag-installation tag-jatun-risba tag-life tag-marc-auge tag-montage tag-mri-ms tag-mri-ms_vanitas tag-mri-ms_vanitas-life-in-motion tag-mustapha-khayati tag-non-place tag-rampa-lab tag-rapid-prototyping tag-readymade tag-situationism tag-vanitas tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/mri-ms_vanitas/" rel="bookmark">MRI MS_Vanitas. Life in motion</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/mri-ms_vanitas/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<h2><span style="color: #5e0365;"><strong>Jatun Risba: MRI MS_Vanitas. Life in motion </strong></span></h2>
+<p>(<a href="https://www.facebook.com/rampalab/">Rampa Lab</a>, <a href="https://www.facebook.com/kersnikova4/">Zavod Kersnikova</a>, Ljubljana, 18.12.2017)</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/25396002_735546703322871_7594158080423729246_n.jpg?_nc_cat=102&_nc_eui2=AeG3qr7biNgeiKgi9H3xvW_3_DfmBrQObdtq5OMmF5PV0tlSVtPjqAbt_7ZCy4Q9VKHjlC6GECagO7kVUbN7AuKnlrD8jEtqA6hJdhyHFz7Txw&_nc_ht=scontent-frx5-1.xx&oh=b3f7d93383b2a475a456801774342e22&oe=5D820BE1"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/25396002_735546703322871_7594158080423729246_n.jpg?_nc_cat=102&_nc_eui2=AeG3qr7biNgeiKgi9H3xvW_3_DfmBrQObdtq5OMmF5PV0tlSVtPjqAbt_7ZCy4Q9VKHjlC6GECagO7kVUbN7AuKnlrD8jEtqA6hJdhyHFz7Txw&_nc_ht=scontent-frx5-1.xx&oh=b3f7d93383b2a475a456801774342e22&oe=5D820BE1" width="720" height="960"></a></p>
+<p><em>Vanitas vanitatum et omnia vanitas.</em> (Vanity of vanities, all (is) vanity; Ecclesiastes)</p>
+<p><strong> </strong><strong>→<span style="color: #5e0365;"> SEE, PLAY WITH, DISRUPT AND APPROPRIATE (PARTS OF) THIS ASSEMBLAGE </span></strong></p>
+<h3><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/25396002_735546703322871_7594158080423729246_n.jpg?_nc_cat=102&oh=0b5c82136ee65805f08de31ffa7dac15&oe=5C1E16E1"><img class="alignleft" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/25396002_735546703322871_7594158080423729246_n.jpg?_nc_cat=102&oh=0b5c82136ee65805f08de31ffa7dac15&oe=5C1E16E1" alt="" width="720" height="960"></a></h3>
+<h3><u>About:</u></h3>
+<p>‘MRI MS_Vanitas. Life in motion’ is the final elaboration of Jatun Risba’s art project <strong><em>MRI MS. My Regular Imagining of Multiple Self</em></strong> during its incubation at RAMPA Lab, Zavod Kersnikova in 2017. It is conceived as a mixed-media interactive assemblage with various tools and things for looking at and understanding the world. The edible human brains were formed with the use of rapid prototyping techniques, while the use of ordinary, found objects (“readymades”) reflects previous trends in manufacturing and artistic production.</p>
+<p>As suggested by the title, the artwork is considered within the <strong>art genre of vanitas</strong>: memento mori representations, which remind the viewer of the evanescence of all matter reality. In contrast to vanitas still lifes, ‘MRI MS_Vanitas’ is conceived in a way to be <strong>“in motion”</strong>: the brain is melting, the candle is burning, the liquids are blobbing while the user is losing his or her sight in an endless game of reflections.<strong> Under observation here, beside the memento mori, are the complex and dynamic relations of particular objects to imagery and to the individuals and societies who both shape and are shaped by them.</strong> A performative autopoietic feedback loop (Fischer-Lichte, 2008) is established between objects and their users (makers).</p>
+<p>‘MRI MS_Vanitas’ is deliberately <strong>set in a transitory ‘non-place’</strong> (Marc Augé, 2000) – in the entry hall of a public building. There the rejected body of objects gets revived by offering to the casual passersby an opportunity to discover curiosity and attention and gather silence. The mirrors, the magnifying glasses, the artist book, the self … can then become something we look at, as well as into, in different, unique ways. What for?</p>
+<p><strong>‘MRI MS_Vanitas’ implies an appropriation of the “art that works”</strong> (Mustapha Khayati, 1966) <strong>which is realized through the appropriation of art (and life) itself</strong>. We can muse at its futility, mull over its grandness. We can …</p>
+<p><img class="alignnone wp-image-1750 size-full" src="http://archive.artsofself.com/wp-content/uploads/2017/12/vanitasbrain.jpg" alt="" width="1024" height="768" srcset="http://archive.artsofself.com/wp-content/uploads/2017/12/vanitasbrain.jpg 1024w,http://archive.artsofself.com/wp-content/uploads/2017/12/vanitasbrain-300x225.jpg 300w,http://archive.artsofself.com/wp-content/uploads/2017/12/vanitasbrain-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></p>
+<h3><u>Context:</u></h3>
+<p>Jatun Risba works as performance and intermedia artist, third theatre practitioner and writer. The long-term art project ‘MRI MS’ (2015-) is based on her lived experience as a woman and her détournement of Multiple Sclerosis into an exercise of Multiple Skills. Each ‘MRI MS’ situation is based on the use of a particular body or interface technology by means of which the artist highlights and maps the process of psychic and collective individuation. After a long-durational deconstruction and revelation of the self (in the 12-hrs <em>Inter-esse </em>performance ‘Exercises in dying’) and after a mind hacking distortion of reality with the use of special glasses (in the participatory research event ‘MRI MS_Upside down’) the artist further develops the motifs of transitoriness and in-betweenness but through a different medium. More information about her work at <a href="https://www.facebook.com/JatunRisbaMRIMS/">www.facebook.com/JatunRisbaMRIMS</a></p>
+<p>The full video of the performative installation MRI MS_Vanitas. Life in Motion is available <a href="https://www.facebook.com/100006026448777/videos/735549413322600/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/abject/" rel="tag">abject</a>, <a href="http://archive.artsofself.com/tag/autopoietic-feedback-loop/" rel="tag">autopoietic feedback loop</a>, <a href="http://archive.artsofself.com/tag/brains/" rel="tag">brains</a>, <a href="http://archive.artsofself.com/tag/death/" rel="tag">death</a>, <a href="http://archive.artsofself.com/tag/dying/" rel="tag">dying</a>, <a href="http://archive.artsofself.com/tag/feedback-loop/" rel="tag">feedback loop</a>, <a href="http://archive.artsofself.com/tag/fischer-lichte/" rel="tag">Fischer-Lichte</a>, <a href="http://archive.artsofself.com/tag/found-object/" rel="tag">found object</a>, <a href="http://archive.artsofself.com/tag/galerija-kapelica/" rel="tag">galerija Kapelica</a>, <a href="http://archive.artsofself.com/tag/installation/" rel="tag">installation</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/life/" rel="tag">life</a>, <a href="http://archive.artsofself.com/tag/marc-auge/" rel="tag">Marc Augé</a>, <a href="http://archive.artsofself.com/tag/montage/" rel="tag">montage</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/mri-ms_vanitas/" rel="tag">MRI MS_Vanitas</a>, <a href="http://archive.artsofself.com/tag/mri-ms_vanitas-life-in-motion/" rel="tag">MRI MS_Vanitas. Life in motion</a>, <a href="http://archive.artsofself.com/tag/mustapha-khayati/" rel="tag">Mustapha Khayati</a>, <a href="http://archive.artsofself.com/tag/non-place/" rel="tag">non-place</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/rapid-prototyping/" rel="tag">rapid prototyping</a>, <a href="http://archive.artsofself.com/tag/readymade/" rel="tag">readymade</a>, <a href="http://archive.artsofself.com/tag/situationism/" rel="tag">situationism</a>, <a href="http://archive.artsofself.com/tag/vanitas/" rel="tag">vanitas</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/mri-ms_vanitas/" title="11:28 am" rel="bookmark"><time class="entry-date" datetime="2017-12-27T11:28:00+00:00">December 27, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1474" class="post-1474 post type-post status-publish format-standard hentry category-forma-viva category-mri-ms category-uncategorized tag-blaz-lukan tag-death tag-exercises-in-dying tag-inter-esse tag-jatun-risba tag-jaz-kot-prevara tag-k4 tag-performance tag-performance-art tag-performans tag-rampa-lab tag-revija-dialogi tag-vaje-v-umiranju tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/jaz-kot-prevara-the-i-as-scam/" rel="bookmark">Jaz kot prevara (The I as scam)</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/jaz-kot-prevara-the-i-as-scam/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<div id="js_4e" class="_5pbx userContent _3576" data-ft='{"tn":"K"}'>
+<p>If you are familiar with Slovene language, you can take a read of the article <em>Jaz kot prevara</em> (The I as scam) written by Blaž Lukan about Jatun Risba’s performance <a class="profileLink" href="https://www.facebook.com/Exercisesindying/?fref=mentions" data-hovercard="/ajax/hovercard/page.php?id=1448976155174611&extragetparams=%7B%22fref%22%3A%22mentions%22%7D" data-hovercard-prefer-more-content-show="1">Exercises in Dying</a> . The piece was published in <a class="profileLink" href="https://www.facebook.com/revijadialogi/?fref=mentions" data-hovercard="/ajax/hovercard/page.php?id=840328382749770&extragetparams=%7B%22fref%22%3A%22mentions%22%7D" data-hovercard-prefer-more-content-show="1">Revija Dialogi </a>(3/4, 2017):</p>
+<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FExercisesindying%2Fposts%2F1848041138601442&width=500" width="500" height="720" frameborder="0" scrolling="no"></iframe></p>
+</div>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/forma-viva/" rel="category tag">Forma Viva</a>, <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/blaz-lukan/" rel="tag">Blaž Lukan</a>, <a href="http://archive.artsofself.com/tag/death/" rel="tag">death</a>, <a href="http://archive.artsofself.com/tag/exercises-in-dying/" rel="tag">Exercises in dying</a>, <a href="http://archive.artsofself.com/tag/inter-esse/" rel="tag">inter-esse</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/jaz-kot-prevara/" rel="tag">Jaz kot prevara</a>, <a href="http://archive.artsofself.com/tag/k4/" rel="tag">K4</a>, <a href="http://archive.artsofself.com/tag/performance/" rel="tag">performance</a>, <a href="http://archive.artsofself.com/tag/performance-art/" rel="tag">performance art</a>, <a href="http://archive.artsofself.com/tag/performans/" rel="tag">performans</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/revija-dialogi/" rel="tag">Revija Dialogi</a>, <a href="http://archive.artsofself.com/tag/vaje-v-umiranju/" rel="tag">Vaje v umiranju</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/jaz-kot-prevara-the-i-as-scam/" title="10:11 am" rel="bookmark"><time class="entry-date" datetime="2017-12-27T10:11:12+00:00">December 27, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1443" class="post-1443 post type-post status-publish format-standard hentry category-mri-ms tag-celje tag-detournement tag-jatun-risba tag-mri-ms tag-my-regular-imaging-of-multiple-self tag-prost-vstop tag-rampa-lab tag-rave tag-spitalska-kapela tag-techno tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/mri-ms_techno/" rel="bookmark">MRI MS_techno</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/mri-ms_techno/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong>VSTOP PROST + RAMPA Lab / MRI MS_techno</strong></p>
+<p>//rave at Špitalska chapel in Celje (SLO), 13 October 2017 from 20:30-22:00</p>
+<p>Art direction: Jatun Risba</p>
+<p>DJ set: <a href="http://ninadragicevic.com/">Nina Dragičević</a></p>
+<p><strong>‘MRI MS_techno’ is ecstasy with electronic music; a variation on themes of rave parties, nonviolence and opensourceness; a service of bodies in movement that liberates and connects …</strong></p>
+<p>FREE ENTRY. Welcome everybody!</p>
+<p>More info at <a href="https://www.facebook.com/events/119955268718717">Fb event page</a></p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/29791070_1690998044271976_5711411431689217585_n.jpg?_nc_cat=109&_nc_eui2=AeESN1q0ZZpHMOXM-kcvaPk_3QJ7G4axo62jzRQ9VBSaohQD1Pt0oSSfufSU6YIAv3GmecTNfgqxWF_feO5sMyKSPRVBsdeeVs7zL4BFxln3Lg&_nc_ht=scontent-frx5-1.xx&oh=56e08318894851deabfd152151530663&oe=5D94B50E"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/29791070_1690998044271976_5711411431689217585_n.jpg?_nc_cat=109&_nc_eui2=AeESN1q0ZZpHMOXM-kcvaPk_3QJ7G4axo62jzRQ9VBSaohQD1Pt0oSSfufSU6YIAv3GmecTNfgqxWF_feO5sMyKSPRVBsdeeVs7zL4BFxln3Lg&_nc_ht=scontent-frx5-1.xx&oh=56e08318894851deabfd152151530663&oe=5D94B50E" width="720" height="960"></a></p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/29871683_1690999347605179_4133554388455606062_o.jpg?_nc_cat=101&_nc_eui2=AeEABcbT-dSKK2YCMYfF5mOsKawQyDXtL0OSEjSGAK4hqRgwDYZk4ZYN2PSTEmbDvspe6M9oHDEn1_piJ-WDK4x_4AnKkcPbBwyHKaV2RiLL5A&_nc_ht=scontent-frx5-1.xx&oh=aa1d2dc24c3d9f6cbe57be652ae62876&oe=5D806C28"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/29871683_1690999347605179_4133554388455606062_o.jpg?_nc_cat=101&_nc_eui2=AeEABcbT-dSKK2YCMYfF5mOsKawQyDXtL0OSEjSGAK4hqRgwDYZk4ZYN2PSTEmbDvspe6M9oHDEn1_piJ-WDK4x_4AnKkcPbBwyHKaV2RiLL5A&_nc_ht=scontent-frx5-1.xx&oh=aa1d2dc24c3d9f6cbe57be652ae62876&oe=5D806C28" width="1111" height="625"></a></p>
+<p>_ _ _</p>
+<p><em>the sounds of Magnetic Resonance Imaging as a techno hymn</em></p>
+<p><em>the thinking body is shuffling</em></p>
+<p><em>the thinking body is dancing hardstyle</em></p>
+<p><em>trippin …</em></p>
+<p><em>your pupils are so wide</em></p>
+<p><em>and your eyes are so big</em></p>
+<p><em>when gazing at FLOSS<sup>1</sup></em></p>
+<p><em>+- MRI MS is a body in motion for healthcare reform + –</em></p>
+<p><em>MRI MS is</em></p>
+<p><em>My Resting In Myself Sane</em></p>
+<p> </p>
+<p><sup>1 </sup>FLOSS: Acronym for Free/Libre/Open-Source Software, a movement for the freedom to run, study, change and freely redistribute copies of software with or without changes.</p>
+<p><img class="wp-image-1444 " src="http://archive.artsofself.com/wp-content/uploads/2017/10/ImmeasurableResults_-lynn-randolph.jpg" alt="" width="540" height="517" srcset="http://archive.artsofself.com/wp-content/uploads/2017/10/ImmeasurableResults_-lynn-randolph.jpg 900w,http://archive.artsofself.com/wp-content/uploads/2017/10/ImmeasurableResults_-lynn-randolph-300x288.jpg 300w,http://archive.artsofself.com/wp-content/uploads/2017/10/ImmeasurableResults_-lynn-randolph-768x736.jpg 768w" sizes="(max-width: 540px) 100vw, 540px">Immeasurable Results by Lynn Randolph</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a> and tagged <a href="http://archive.artsofself.com/tag/celje/" rel="tag">Celje</a>, <a href="http://archive.artsofself.com/tag/detournement/" rel="tag">détournement</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/my-regular-imaging-of-multiple-self/" rel="tag">My Regular Imaging of Multiple Self</a>, <a href="http://archive.artsofself.com/tag/prost-vstop/" rel="tag">PROST VSTOP</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/rave/" rel="tag">rave</a>, <a href="http://archive.artsofself.com/tag/spitalska-kapela/" rel="tag">Špitalska kapela</a>, <a href="http://archive.artsofself.com/tag/techno/" rel="tag">techno</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/mri-ms_techno/" title="10:55 am" rel="bookmark"><time class="entry-date" datetime="2017-10-01T10:55:07+00:00">October 1, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1422" class="post-1422 post type-post status-publish format-standard hentry category-mri-ms tag-brain tag-embodied-brain tag-jatun-risba tag-mri-ms tag-mri-ms_upside-down tag-neuroplasticity tag-rampa tag-rampa-lab tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/marginalia-about-mri-ms_upside-down/" rel="bookmark">Marginalia about MRI MS_upside down</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/marginalia-about-mri-ms_upside-down/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p>The night before the participatory performance <a href="http://artsofself.com/mri-ms_upside-down/">MRI MS_upside down</a>,  I wore the upside down glasses for the first time.</p>
+<p>The wearing time was intentionally short (15-20 min) because I wanted to preserve the alienation effect for the next eve’s experiment. I put the glasses on and started walking around the room, moving and rising up the ladder <strong>in the attempt of configuring how my body looks and feels like with a detoured vision</strong>. The experience was striking: my head was tense and heavy, my limbs troubled. I thought: “This is going to be the hardest performance I’ve ever done, even more demanding than the 12 hours long performance <a href="http://artsofself.com/exercises-in-dying/"><em>Exercises in dying</em></a> as it affects the brain directly.”</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/26055561_1592319534139828_5849222568425565602_n.jpg?_nc_cat=103&_nc_eui2=AeGulVSwYzG4zQAEYcqFJQxnGHBhjJImNM-d3R85uinYWtr9O7_g7J4mn9QAfuUH3O8KmRQPj8OrE--wo2_FelsHgU487aCkAHpkCD8XZy-xLQ&_nc_ht=scontent-frx5-1.xx&oh=7a0d938fceb4ef59818a1cbcb189a68b&oe=5D8869A6"><img class="alignnone" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/26055561_1592319534139828_5849222568425565602_n.jpg?_nc_cat=103&_nc_ht=scontent-frt3-1.xx&oh=4ccc74eab9bb98f3d316e14af60c5b36&oe=5C738EA6" alt="" width="720" height="960"><img class="alignnone" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/26055561_1592319534139828_5849222568425565602_n.jpg?_nc_cat=103&_nc_eui2=AeGulVSwYzG4zQAEYcqFJQxnGHBhjJImNM-d3R85uinYWtr9O7_g7J4mn9QAfuUH3O8KmRQPj8OrE--wo2_FelsHgU487aCkAHpkCD8XZy-xLQ&_nc_ht=scontent-frx5-1.xx&oh=7a0d938fceb4ef59818a1cbcb189a68b&oe=5D8869A6" alt="" width="720" height="960"></a></p>
+<p>When the test was over I had a 15 minutes long phone conversation. I wanted to share some insecurities about the experience, but encountered difficulties in formulating comprehensive sentences. <strong>My linguistic skills went lacking. I was stuttering</strong> – a dysfunction I’ve never had problems with, in everyday life – <strong>and showing signs of dyslexia</strong>: inverting the position of certain letters in words, another dysfunction I am not affected by normally.</p>
+<p>Nonetheless, my prognosis about the event MRI MS_upside down was incorrect! The research experiment ran even too smoothly, leaving no space for unexpected  outbursts of creativity or insight. My embodied brain was already accustomed to an upside down vision of reality and the curious shock of the eve before could not be repeated again.</p>
+<p>Can this not be taken as a tangible proof of<strong> <a href="https://en.wikipedia.org/wiki/Neuroplasticity" target="_blank" rel="noopener noreferrer">neuroplasticity</a></strong>, <strong>the ability of the brain to modify its connections and re-wire itself</strong>?</p>
+<p>(Written by Jatun Risba in the weeks following the performance)</p>
+<p><a href="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/29792096_1690948260943621_6114115285668353197_n.jpg?_nc_cat=100&_nc_ht=scontent-frt3-1.xx&oh=b6884f82c974aceb756e42d62f793b3c&oe=5C775682"><img class="alignnone" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/29792096_1690948260943621_6114115285668353197_n.jpg?_nc_cat=100&_nc_ht=scontent-frt3-1.xx&oh=b6884f82c974aceb756e42d62f793b3c&oe=5C775682" alt="" width="960" height="640"></a><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/30052510_1690948260943621_6114115285668353197_o.jpg?_nc_cat=100&_nc_eui2=AeEB3x4v3HabtM-6lEEDxPixUTC6LtMlxrbzDa-2wSq2fsyscyaW7nrtWHWCGXVtoRSskDaw6QDkUAPnCEdnpdhfp5LrdcoNYgJz3exCWgKVIg&_nc_ht=scontent-frx5-1.xx&oh=cc583babf2b05dbb3c97402722184d36&oe=5DC73EF4"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/30052510_1690948260943621_6114115285668353197_o.jpg?_nc_cat=100&_nc_eui2=AeEB3x4v3HabtM-6lEEDxPixUTC6LtMlxrbzDa-2wSq2fsyscyaW7nrtWHWCGXVtoRSskDaw6QDkUAPnCEdnpdhfp5LrdcoNYgJz3exCWgKVIg&_nc_ht=scontent-frx5-1.xx&oh=cc583babf2b05dbb3c97402722184d36&oe=5DC73EF4" width="1323" height="882"></a></p>
+<h3><em>Post scriptum </em></h3>
+<p>The participatory research event ‘MRI MS_Upside down’ at Rampa Lab (Zavod Kersnikova) ended with a <strong>Dionysian subversion of cultural codes</strong>. Jatun Risba was running and falling among the gathered people in the corridors at Kersnikova 4, who were patiently waiting in front of  <a href="https://www.facebook.com/Kapelica/">Kapelica Gallery</a> closed doors for the inauguration of an exhibit that ended up postponed until further notice. About the action, Risba states:</p>
+<blockquote><p>“Artists of self cannot turn their backs to the contradictions and opportunities that inhabit our social scape. Since they’ve trained their thinking body to awareness and inspired responsiveness, they would rather not numb impulses. They would rather not pretend not to see, listen or feel. My action that followed the ‘MRI MS_Upside down’ participatory event can be regarded as a hic et nunc art intervention that aimed to foster awakening and its embodiment in worldly life.”</p></blockquote>
+<div id="fb-root"></div>
+<p><script async="1" defer crossorigin="anonymous" src="https://connect.facebook.net/sl_SI/sdk.js#xfbml=1&version=v3.3"></script></p>
+<div class="fb-post" data-href="https://www.facebook.com/JatunRisbaMRIMS/photos/pcb.1472618486109934/1472612699443846/?type=3&theater" data-width="625">
+<blockquote cite="https://www.facebook.com/JatunRisbaMRIMS/photos/a.1358740857497698/1472612699443846/?type=3" class="fb-xfbml-parse-ignore">
+<p>Photo by Miha Fras</p>
+<p>Objavil/a <a href="https://www.facebook.com/JatunRisbaMRIMS/">MRI MS. My Resting In Myself Sane</a> dne <a href="https://www.facebook.com/JatunRisbaMRIMS/photos/a.1358740857497698/1472612699443846/?type=3">Četrtek, 17. avgust 2017</a></p></blockquote>
+</div>
+<p> </p>
+<hr>
+<p>Production: <a href="https://www.facebook.com/rampalab/">Rampa Lab</a>, <a href="https://www.facebook.com/kersnikova4/">Zavod Kersnikova</a></p>
+<p>Project is supported by Ministry of Culture of the Republic of Slovenia, Municipality of Ljubljana and Student Organization of the University of Ljubljana.</p>
+<p> </p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a> and tagged <a href="http://archive.artsofself.com/tag/brain/" rel="tag">brain</a>, <a href="http://archive.artsofself.com/tag/embodied-brain/" rel="tag">embodied brain</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/mri-ms_upside-down/" rel="tag">MRI MS_Upside down</a>, <a href="http://archive.artsofself.com/tag/neuroplasticity/" rel="tag">neuroplasticity</a>, <a href="http://archive.artsofself.com/tag/rampa/" rel="tag">RAMPA</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/marginalia-about-mri-ms_upside-down/" title="4:40 pm" rel="bookmark"><time class="entry-date" datetime="2017-08-17T16:40:58+00:00">August 17, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1384" class="post-1384 post type-post status-publish format-standard hentry category-mri-ms category-uncategorized tag-jatun-risba tag-ljubljana tag-mri-ms tag-mri-ms_upside-down tag-rampa tag-rampa-lab tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/mri-ms_upside-down/" rel="bookmark">MRI MS_upside down</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/mri-ms_upside-down/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong>RAMPA</strong> +<strong> Zavod Kersnikova</strong> / <span style="color: #5e0365;"><strong>Jatun Risba: MRI MS_upside down</strong></span></p>
+<p>//participatory performance, 25.4.17 at 19:00</p>
+<p> </p>
+<p><img class="alignnone size-medium" src="https://theworldturnedupsidedownne.files.wordpress.com/2013/04/cropped-ud-front1.png" width="399" height="308"></p>
+<p> </p>
+<p><strong>The project ‘MRI MS’ of performance artist Jatun Risba draws on her lived experience. It’s a story about her détour of multiple sclerosis.</strong> With the embodiment of intermediate states of consciousness, Jatun Risba is exploring the transindividuality (Simondon), elusiveness and plasticity of the self. Each ‘MRI MS’ performance is based on the use of a particular body or interface technology by means of which the artist highlights and maps the processes of psychic and collective individuation in the inner landscape. Her performative language <a href="http://artsofself.com/inter-esse/"><em>Inter-esse</em></a> (Latin for “to be in-between”; also “be beyond self”), discloses the thinking body in its liminality: breath, movements, voice and contact in the functioning of the autonomic nervous system, or at the level of the limbic system. This is the phylogenetically older part of the brains that is responsible for some vegetative functions, emotional reactions, learning and memory and for the release of endorphins, the endogenous opiates. In this liminal state of consciousness the performer establishes a dialogue with the chosen technology.</p>
+<p> </p>
+<p><strong>In the participatory performance ‘MRI MS_upside down’ the <em>doers</em> will be testing the mediating effect of perception altering on the awareness and use of the body.</strong> What happens when my vision is flipped upside down? What or who has been inverted? What occurs when I inhabit the gap between what I see and what (I think) I am? Stay there and then took a step backwards. And then another and then another …</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/29872236_1690952590943188_8797772905253284469_o.jpg?_nc_cat=100&_nc_eui2=AeGgPGn9gwSd7z0wDqBynuhoXisIufRN4M6k0wNnvUv0Qhl1vS0fJdzIyalPD4mAWEOxhivRacMb96hrun0e9NWuFK5XrL7-rAPT0tZxol9fkg&_nc_ht=scontent-frx5-1.xx&oh=f1f50145add16350390f607cffb8613e&oe=5DC1DF1E"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/29872236_1690952590943188_8797772905253284469_o.jpg?_nc_cat=100&_nc_eui2=AeGgPGn9gwSd7z0wDqBynuhoXisIufRN4M6k0wNnvUv0Qhl1vS0fJdzIyalPD4mAWEOxhivRacMb96hrun0e9NWuFK5XrL7-rAPT0tZxol9fkg&_nc_ht=scontent-frx5-1.xx&oh=f1f50145add16350390f607cffb8613e&oe=5DC1DF1E" width="1077" height="605"></a></p>
+<p> </p>
+<p>You can follow the project on the Fb page <a href="https://www.facebook.com/JatunRisbaMRIMS/" target="_blank" rel="noopener noreferrer">MRI MS. My Regular Imagination of Multiple Self</a>, where the performance will be live streamed and available for commenting.</p>
+<p>Fb event page: <a href="https://www.facebook.com/events/116842152200264/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/events/116842152200264/</a></p>
+<p> </p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/ljubljana/" rel="tag">Ljubljana</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/mri-ms_upside-down/" rel="tag">MRI MS_Upside down</a>, <a href="http://archive.artsofself.com/tag/rampa/" rel="tag">RAMPA</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/mri-ms_upside-down/" title="7:36 pm" rel="bookmark"><time class="entry-date" datetime="2017-04-19T19:36:11+00:00">April 19, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1375" class="post-1375 post type-post status-publish format-standard hentry category-mri-ms category-uncategorized tag-alessandro-di-giampietro tag-cirkulacija2 tag-ecstatic-trance-postures tag-jatun-risba tag-limbico tag-mamourou-sanou tag-mri-ms tag-rampa tag-rampa-lab">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/mri-ms_allone/" rel="bookmark">MRI MS_allone</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/mri-ms_allone/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong>Cirkulacija2 + RAMPA</strong> / <span style="color: #5e0365;"><strong><span style="color: #5e0365;">Jatun Risba: </span>MRI MS_allone</strong></span></p>
+<p>// performance at the opening of the <strong>exhibition Alessandro Di Giampietro: LIMBICO. Whatever you think I am That is what I’m not</strong>, Cirkulacija 2, 20.4.17 at 20:30</p>
+<p>Alessandro’s art work springs from the observation of human identity and focuses on the multilayered personae in contemporary society. His photography, video installations and performances mix up conventional narrative forms and abolish the walls between reality and fiction. In the context of eclectic, humorous and seemingly fleeting expressions, he creates bizarre and mysterious settings in which reality becomes uncertain and fantasy blends with reality.</p>
+<p>At the opening of the exhibition,<strong> Jatun Risba will perform in co. with Mamourou Sanou</strong> themergingoftimeandspaceAfricaandEuropeancientandimmediatepresencEeecstaticdanceinpeaceinstillness</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17800097_1296188077163106_4192571900790249542_n.jpg?_nc_cat=110&_nc_eui2=AeFxwd91_2HHw_XJzFx_CJIqVJZhR10faOLFMVJjZumig5D0uwBvnQ7LGZcWHgdU-2hajvTQ0j3X9YtVQWj2xlHW7e1mBA0zr995RFnUz-9rww&_nc_ht=scontent-frx5-1.xx&oh=c77424c247f20b68b563776ab3df189a&oe=5DC0843D"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17800097_1296188077163106_4192571900790249542_n.jpg?_nc_cat=110&_nc_eui2=AeFxwd91_2HHw_XJzFx_CJIqVJZhR10faOLFMVJjZumig5D0uwBvnQ7LGZcWHgdU-2hajvTQ0j3X9YtVQWj2xlHW7e1mBA0zr995RFnUz-9rww&_nc_ht=scontent-frx5-1.xx&oh=c77424c247f20b68b563776ab3df189a&oe=5DC0843D" width="739" height="960"></a></p>
+<p><a href="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/18033146_1308542079261039_8075095222049261746_n.jpg?_nc_cat=105&_nc_ht=scontent-frt3-1.xx&oh=8606053085908d3d644cb9776f6e0b7f&oe=5C41C4F7"><img class="alignnone" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/18033146_1308542079261039_8075095222049261746_n.jpg?_nc_cat=105&_nc_ht=scontent-frt3-1.xx&oh=8606053085908d3d644cb9776f6e0b7f&oe=5C41C4F7" alt="" width="960" height="540"></a>Fb event: <a href="https://www.facebook.com/events/116485265565248/">https://www.facebook.com/events/116485265565248/</a></p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/alessandro-di-giampietro/" rel="tag">Alessandro Di Giampietro</a>, <a href="http://archive.artsofself.com/tag/cirkulacija2/" rel="tag">Cirkulacija2</a>, <a href="http://archive.artsofself.com/tag/ecstatic-trance-postures/" rel="tag">ecstatic trance postures</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/limbico/" rel="tag">LIMBICO</a>, <a href="http://archive.artsofself.com/tag/mamourou-sanou/" rel="tag">Mamourou Sanou</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/rampa/" rel="tag">RAMPA</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a> on <a href="http://archive.artsofself.com/mri-ms_allone/" title="7:14 am" rel="bookmark"><time class="entry-date" datetime="2017-04-19T07:14:33+00:00">April 19, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-jutranje-misli-in-samosprasevanje category-mri-ms category-samosprasevanje-objave category-uncategorized tag-exercises-in-dying tag-hana-josic tag-inter-esse tag-jatun-risba tag-klub-k4 tag-limbic-sistem tag-ljubljana tag-mri-ms tag-performance tag-performative-event tag-rampa-lab tag-self-reflection tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/evaluation-exercises-in-dying/" rel="bookmark">Evaluation of the research performance “Exercises in Dying”</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/evaluation-exercises-in-dying/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><span style="color: #5e0365;"><strong>What was the performance »Exercises in Dying«? </strong></span></p>
+<p>– <strong>A tentative of freeing from the known</strong> through the washing away of the old (unacknowledged feelings, unprocessed experiences, accustomed approaches and techniques) that had anchored and limited me. The aim was to create the circumstances that <strong>stimulate the bringing forth of the New</strong>.</p>
+<p>– <strong>A research about the limbic state of consciousness and its manifestation in physical, vocal and thought actions</strong> (performative actions determined by clear intentions) and their development during a lengthy performance.</p>
+<p><a href="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/17309161_1360556490668162_4077605220343325266_n.jpg?_nc_cat=102&_nc_ht=scontent-frt3-1.xx&oh=c319fb272065a145825937c565e9e1fb&oe=5C4655B5"><img class="alignnone" src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/17309161_1360556490668162_4077605220343325266_n.jpg?_nc_cat=102&_nc_ht=scontent-frt3-1.xx&oh=c319fb272065a145825937c565e9e1fb&oe=5C4655B5" alt="" width="640" height="960"></a><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17358791_1360556484001496_2610541238478254179_o.jpg?_nc_cat=107&_nc_eui2=AeGJ0BW5Fv3hWJoZiDnuJ9u1VuPRERZblV-JchVrPlNXifCwC7tCSnPPJCG_Z09RTY2nlcSOYNn5oYbKxqCvow7wXn7qPU73dk25AX2BG3k9xw&_nc_ht=scontent-frx5-1.xx&oh=1f95d33dc3efb60d793924f3629f790c&oe=5D8C3C68"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17358791_1360556484001496_2610541238478254179_o.jpg?_nc_cat=107&_nc_eui2=AeGJ0BW5Fv3hWJoZiDnuJ9u1VuPRERZblV-JchVrPlNXifCwC7tCSnPPJCG_Z09RTY2nlcSOYNn5oYbKxqCvow7wXn7qPU73dk25AX2BG3k9xw&_nc_ht=scontent-frx5-1.xx&oh=1f95d33dc3efb60d793924f3629f790c&oe=5D8C3C68" width="2048" height="1366"></a></p>
+<p><span style="color: #5e0365;"><strong>What happened during the performance?</strong></span></p>
+<p>– THE INTERPLAY BETWEEN VOICE AND MOVEMENTS</p>
+<p>Contrary to the performative <em>modus operandi</em> I am familiar to <a href="http://artsofself.com/inter-esse/">(<em>Inter-esse</em></a>, where a meditative state of mind is transferred into movements, which affect the breathing and stimulate spontaneous vocalizations; the thinking body operates in unison), I decided to try a new approach and do what I don’t know how to do. After all this was the purpose of the research.</p>
+<p>I chose to base my actions on the <em>Watching</em> exercise of the Workcenter of Jerzy Grotowski and Thomas Richards in which the performer minimizes the sounds of breathing and the noise of movements during a harsh physical workout. This approach differs profoundly from the previously described<em> Inter-esse</em> technique that uses breathing and vocalizations as energy supplies and stimuli for movements. As a consequence, the first hour of each of the four cycles, which was devoted to physical actions, was executed with an attention for sound reduction. The experiment didn’t work as <strong>the artificially imposed separation between the movements and the sounds of the body didn’t prepare and hit up my voice properly</strong>.</p>
+<p>The voice is at the moment my weakest medium of expression and needs special care in order to operate well as I haven’t been cultivating it until very recently. I am training my body daily since April 2015 and I’ve achieved fabulous results in a short time thanks to a regular practice of Grotowski’s Physical Training. I introduced a regular voicework in my training schedule only in December 2016 and have already achieved the first notable improvements. In the last vocal training before the performance I easily reached the state in which my voice resonated fully and achieved a vibration that was able to touch things. My training warm-up consisted of a 20 min singing session while running in a <em>Watching</em>-like manner (the arms are dropped and the steps are light) in a hall that was twice as big as the performance space.</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17626170_1500990063306553_6469783588570768519_n.jpg?_nc_cat=104&oh=9058d80d116ce3ccbda9c7f221741548&oe=5C22CF36"><img class="alignnone" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/17626170_1500990063306553_6469783588570768519_n.jpg?_nc_cat=104&oh=9058d80d116ce3ccbda9c7f221741548&oe=5C22CF36" alt="" width="960" height="640"></a><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17434693_1500990063306553_6469783588570768519_o.jpg?_nc_cat=104&_nc_eui2=AeGXXOXtTeK8pzH1OY7wZy5jPSt1mhaFE1BuJ9YzlIV7Tj3SZABUT5-1FcAo2SWg_hcwFbpgKX0IjqXwTSHD0DbSTvVVtCnY64Ji6mmAdFlwUQ&_nc_ht=scontent-frx5-1.xx&oh=e9849c3d167371ab128ef7a3f3802ed2&oe=5D936991"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17434693_1500990063306553_6469783588570768519_o.jpg?_nc_cat=104&_nc_eui2=AeGXXOXtTeK8pzH1OY7wZy5jPSt1mhaFE1BuJ9YzlIV7Tj3SZABUT5-1FcAo2SWg_hcwFbpgKX0IjqXwTSHD0DbSTvVVtCnY64Ji6mmAdFlwUQ&_nc_ht=scontent-frx5-1.xx&oh=e9849c3d167371ab128ef7a3f3802ed2&oe=5D936991" width="2048" height="1366"></a></p>
+<p>– SKELETONS FROM THE CLOSET TOOK OVER</p>
+<p>My skeletons from the closet (past selfs with nasty baggage) have appeared during the performance and took control over myself, which was exactly what my aims were.<strong> My intention was to offer them a space for expression after which I will be able to transform the ghosts, who were once hunting me, into creative companions, which I am able to embody consciously and structure on will.</strong> In the next weeks and months I will find out if this was actually achieved.</p>
+<p>There was a phase in the performance in which I was clearly aware of being carried into a territory of fears, lamenting and impotence, which I had used to inhabit in teenage periods of despair and depression. This acknowledging was followed by a state of detachment as I got annoyed by the sameness and powerlessness of what was going on. I clearly remember my thoughts and how it felt: “Is that everything myself contains, the same, old terrain of tears, lamenting and smallness? Get over this dumbness…”</p>
+<p>– PHYSICAL ACTIONS ON THE BORDER OF THE KNOWN</p>
+<p><strong>On one hand I researched slow movements that emanate sensefulness and presence and on the other, the deconstruction of the known through a conscious embodiment of counter-impulses.</strong> For example, if I felt the impulse to turn my chest on the right, I turned it on the left or up/down. This approach is similar to Etienne Decroux’s  “Contradictions” in the technique of <a href="https://en.wikipedia.org/wiki/Corporeal_mime">Corporeal mime</a>.</p>
+<p>The deconstruction was more present in the first two cycles as later I suffered a decrease<i> </i>in energy and focus that prevented me to carry on the research with the same level of quality, at least in my perception.</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17632156_1500990056639887_1595778652107935791_o.jpg?_nc_cat=110&_nc_eui2=AeHt2WaeMqiK5VhVrnjpWYTQb7m1thcFBwBjvicDLtQYBguiXIN-foz-Y2UOnguIY43-9m1K-HJmkrUdpIpGpw55zcEoEDYQ22xRbC98XPQIZg&_nc_ht=scontent-frx5-1.xx&oh=69e5d8484c72fbb0a1fc4fd454d7fd66&oe=5D91B6C6"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17632156_1500990056639887_1595778652107935791_o.jpg?_nc_cat=110&_nc_eui2=AeHt2WaeMqiK5VhVrnjpWYTQb7m1thcFBwBjvicDLtQYBguiXIN-foz-Y2UOnguIY43-9m1K-HJmkrUdpIpGpw55zcEoEDYQ22xRbC98XPQIZg&_nc_ht=scontent-frx5-1.xx&oh=69e5d8484c72fbb0a1fc4fd454d7fd66&oe=5D91B6C6" width="2048" height="1367"></a></p>
+<p>– THE LABOR WITH THE GLASS TUBES</p>
+<p>In the first round I was extremely slow in the handling of the tubes and I managed to put ash in a third of them only. I hadn’t been familiar with glass test tubes before and had first to learn, how to move them with precision without the risk of cracking or breaking them. In the third or second round I felt confident enough to decide to complicate my tube managing task. <strong>I began to perform the work with a focused intention. Only in this way my<em> per se</em> uninteresting activity could gain presence and become interesting.</strong></p>
+<p>I applied an extra-daily state of awareness to my actions and my filling of the tubes with ash and earth was transformed into a job of vital importance.  I imagined that every filled test tube became a magic bullet that would restore the health to one or more people with the diagnose of multiple sclerosis. In this way I gained a concrete and valid reason to perform my tube-filling task fast and well. It was a success!</p>
+<p>– ENERGY ARCH IN LENGTHY PERFORMANCE</p>
+<p><strong>My expectancy was that the levels of presence and limbic “possession” would continue to rise with time. I was wrong and the best parts of the performance with the major moments of enchantment were achieved in the first two cycles of the performance</strong>. The flow of energy was following a <em>decrescendo</em> rhythm that I later connected with my voluntary segmentation of breathing, vocalization and movements, which prevented me to go deeper in the limbic state of embodiment and ecstatic trance consciousness (see Felicitas D. Goodman & Nana Nauwald: <em>Ecstatic Trance. New Ritual Body Postures</em>, 2003).</p>
+<div></div>
+<p>I am still tempted to sustain the idea that a <em>crescendo</em> of energy is achievable with a genuine <em>Inter-esse</em> performance where the whole body functions in unison, but the hypothesis needs to be put on test. However, moments of “<a href="https://en.wikipedia.org/wiki/Second_wind">second wind</a>” manifested also in the last two parts of the performance, but the general level of the actions suffered a decrease in quality.</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17358570_1360557154001429_6657375396450612331_o.jpg?_nc_cat=103&_nc_eui2=AeG0XzAo184SQ6YIfikGBC9maSKM7BfIRo0IAeyjedlqA3QY5XS0qBCyxOIic8LS1lqR-GKfOy8vEjsyT4GLtbm375SZTWSBMUkfs06bDbQKMA&_nc_ht=scontent-frx5-1.xx&oh=63e15b5188f30e81a1116df5ba8c75ec&oe=5D871436"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17358570_1360557154001429_6657375396450612331_o.jpg?_nc_cat=103&_nc_eui2=AeG0XzAo184SQ6YIfikGBC9maSKM7BfIRo0IAeyjedlqA3QY5XS0qBCyxOIic8LS1lqR-GKfOy8vEjsyT4GLtbm375SZTWSBMUkfs06bDbQKMA&_nc_ht=scontent-frx5-1.xx&oh=63e15b5188f30e81a1116df5ba8c75ec&oe=5D871436" width="2048" height="1367"></a></p>
+<p><strong>– </strong>THERE IS NO PRIVATENESS IN THE COMMON</p>
+<p>A few witnesses of the performance ‘Exercises in dying’ commented their experience as being very unusual to the performative events they normally attend. They felt as they were witnessing something very authentic and intimate, something private which they shouldn’t have been given access to. This sensation was increased by the fact that the performer (myself) seldomly turned attention to the people present.</p>
+<p>I was consciously giving minimum attention to the spectators in order to maintain maximum focus on what was happening inside and in-between me as the endurance and research format of the performance required some safety, energy-saving precautions. However, I immediately noticed the arrival of a cat in the space and started a vocal interaction with it. The animal was catwalking on the borders of the pool in which the performance was taking place. I was hoping it would join me inside the earth-covered area, but the cat stopped on the last two stairs.</p>
+<p>For sure I wasn’t giving attention to the visitors seating or standing backward in semi-darkness, but I clearly acknowledged and recognized (in case I knew them from before) the visitors, who were placed in the vicinity of the pool. My attention was a little more oriented to the spectators at the begging of each of the four cycles when I repeatedly announced an invocation that had the following structure: “Remember human that (… sth sth) and (… a  subtle contradiction to the just affirmed).”</p>
+<p>There was one moment in the performance in which I directly addressed the spectators. It was during my only urination in 12 hrs, when I said “Saj te vidim… Jaz tudi!” (I am seeing you… So do I!). I could clearly feel the disturbance my words generated in the present witnesses. The phrase contained a clairvoyance. Even without directly addressing or facing the Other, you cannot avoid “seeing it”, meaning that you are inevitably affected by its presence.</p>
+<p>My work in general (as it is based on the <em>Inter-esse</em> performative approach) and the project ‘MRI MS’ in particular, in even more complex and evident terms, are conducted around  the issues of property and common space. In fact, my art praxis suggests that neither intimacy nor individual development can exist alone. They occur within a certain defined spacio-social context (geographic, social, politic, economic, linguistic, archetypic, etc.) and are therefore never private.</p>
+<p><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17635328_1500990053306554_3013328145226015093_o.jpg?_nc_cat=110&_nc_eui2=AeFQiGL5UjObYkFE39ZmnTP2KA8XNuQMPRt9r7RKcjpTaBj6Erxs61zR7t_am8_dG0XziKnazHss_D0HP-xgZpqVe1gGGtRb75PJ3lbySgHBPg&_nc_ht=scontent-frx5-1.xx&oh=7ad1864d7405ac5b0ffb3cd60a974e97&oe=5DC6F295"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/17635328_1500990053306554_3013328145226015093_o.jpg?_nc_cat=110&_nc_eui2=AeFQiGL5UjObYkFE39ZmnTP2KA8XNuQMPRt9r7RKcjpTaBj6Erxs61zR7t_am8_dG0XziKnazHss_D0HP-xgZpqVe1gGGtRb75PJ3lbySgHBPg&_nc_ht=scontent-frx5-1.xx&oh=7ad1864d7405ac5b0ffb3cd60a974e97&oe=5DC6F295" width="2048" height="1367"></a></p>
+<p><span style="color: #5e0365;"><strong>What </strong></span><span style="color: #5e0365;"><strong>have I learned from the experience? </strong></span></p>
+<p>– DON’T SEGMENT VOCALIZATION AND BREATHING FROM PHYSICAL ACTIONS as it brings a <em>decrescendo</em> rhythm and doesn’t prepare the voice for singing.</p>
+<p>– ADOPERATE THOUGHT-ACTIONS in your performance, always! The clearer they are, the better.</p>
+<p>– MY GUT LANGUAGE IS ITALIAN. Therefore work with Italian vocal actions first and then move to native Slovene and English.</p>
+<p>– WHAT COUNTS MOST IS A CERTAIN LEVEL OF QUALITY: the quality of “persuasion” (see Carlo Michelstaedter: <em>Persuasion and Rhetoric, </em>1910). Once there, it doesn’t really matter what you do as everything is valuable and valid. You can direct this state of being or energy into art, performance, writing, talking, research or anything else. The form can take different shapes, but what really counts – the invisible, subtle matter or the quality – remains the same, no coming no going.</p>
+<p> </p>
+<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FExercisesindying%2Fposts%2F1821657747906448&width=500" width="500" height="764" frameborder="0" scrolling="no"></iframe></p>
+<p> </p>
+<hr>
+<p>This evaluation is an example of <a href="http://artsofself.com/tehnologije/jutranje-misli-in-samosprasevanje/" target="_blank" rel="noopener noreferrer">self-reflection</a>.</p>
+<p>Photo: Hana Jošić</p>
+<p>Production: Rampa / <a class="profileLink" href="https://www.facebook.com/kersnikova4/" data-hovercard="/ajax/hovercard/page.php?id=294254000671426" data-hovercard-prefer-more-content-show="1">Kersnikova</a></p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/" rel="category tag">Jutranje misli in samospraševanje</a>, <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a>, <a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/samosprasevanje-objave/" rel="category tag">Samospraševanje objave</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/exercises-in-dying/" rel="tag">Exercises in dying</a>, <a href="http://archive.artsofself.com/tag/hana-josic/" rel="tag">Hana Jošić</a>, <a href="http://archive.artsofself.com/tag/inter-esse/" rel="tag">inter-esse</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/klub-k4/" rel="tag">Klub K4</a>, <a href="http://archive.artsofself.com/tag/limbic-sistem/" rel="tag">limbic sistem</a>, <a href="http://archive.artsofself.com/tag/ljubljana/" rel="tag">Ljubljana</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/performance/" rel="tag">performance</a>, <a href="http://archive.artsofself.com/tag/performative-event/" rel="tag">performative event</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/self-reflection/" rel="tag">self-reflection</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/evaluation-exercises-in-dying/" title="4:19 pm" rel="bookmark"><time class="entry-date" datetime="2017-03-12T16:19:16+00:00">March 12, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1302" class="post-1302 post type-post status-publish format-standard hentry category-mri-ms tag-death tag-dying tag-exercises-in-dying tag-inter-esse tag-jatun-risba tag-k4 tag-klub-k4 tag-mri-ms tag-performance tag-performans tag-performative-event tag-performativen-dogodek tag-rampa-lab tag-smrt tag-umiranje tag-vaje-v-umiranju tag-zavod-kersnikova">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/exercises-in-dying/" rel="bookmark">Exercises in Dying</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/exercises-in-dying/#comments">1 Reply</a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong>On Ash Wednesday, 1st of March 2017</strong><strong> </strong>from 12 to 24 o’clock, you are invited to the <strong>performative event Exercises in dying</strong> at <strong>Klub K4 at Kersnikova 4</strong> in Ljubljana, Slovenia. You can follow the Facebook page “<a href="https://www.facebook.com/Exercisesindying/">Exercises in dying</a>”, where the video of the performance will be broadcast live and also available for commenting.</p>
+<p><img class="alignnone wp-image-1669 size-full" src="http://archive.artsofself.com/wp-content/uploads/2017/02/16807482_1456937857711774_7187439285753475657_n.png" alt="" width="600" height="600" srcset="http://archive.artsofself.com/wp-content/uploads/2017/02/16807482_1456937857711774_7187439285753475657_n.png 600w,http://archive.artsofself.com/wp-content/uploads/2017/02/16807482_1456937857711774_7187439285753475657_n-300x300.png 300w,http://archive.artsofself.com/wp-content/uploads/2017/02/16807482_1456937857711774_7187439285753475657_n-150x150.png 150w" sizes="(max-width: 600px) 100vw, 600px"></p>
+<p>In the interim stage of the project ‘MRI MS’, the artist <strong>Jatun Risba will perform a long <em>Inter-</em><em>esse </em>performance</strong>, in which she will walk through the physical, aural and psychological stages of herself in order to deconstruct and liberate the self. The <em>Inter-esse</em> (from Latin <em>interesse</em>: ‎’to be or lie in-between’, also ‘to go beyond the self’) performative practice explores <strong>liminal forms of the thinking body – movement, gesture, voice, breath, and contact – in the functioning of the autonomic nervous system, at the level of the limbic system</strong>.The limbic system is the phylogenetically older, mammalian part of the brains that takes care of motivation, memory, emotions and willingness to study.</p>
+<p>The twelve-hour performance of Jatun Risba is a challenge of physical & mental endurance and a trans-individual experiment in movement, emotions, and interaction, which manifest in the process of psychological dying. The aim of this action is to forget the known from the past – cognitive and behavioral conditioning, fear and sadness – for a new, fresh start.</p>
+<p> </p>
+<hr>
+<p>Production: <a href="https://www.facebook.com/rampalab/">Rampa Lab</a>, <a href="https://www.facebook.com/kersnikova4/">Zavod Kersnikova</a></p>
+<p>Project is supported by Ministry of Culture of the Republic of Slovenia, Municipality of Ljubljana and Student Organization of the University of Ljubljana.</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/mri-ms/" rel="category tag">MRI MS</a> and tagged <a href="http://archive.artsofself.com/tag/death/" rel="tag">death</a>, <a href="http://archive.artsofself.com/tag/dying/" rel="tag">dying</a>, <a href="http://archive.artsofself.com/tag/exercises-in-dying/" rel="tag">Exercises in dying</a>, <a href="http://archive.artsofself.com/tag/inter-esse/" rel="tag">inter-esse</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/k4/" rel="tag">K4</a>, <a href="http://archive.artsofself.com/tag/klub-k4/" rel="tag">Klub K4</a>, <a href="http://archive.artsofself.com/tag/mri-ms/" rel="tag">MRI MS</a>, <a href="http://archive.artsofself.com/tag/performance/" rel="tag">performance</a>, <a href="http://archive.artsofself.com/tag/performans/" rel="tag">performans</a>, <a href="http://archive.artsofself.com/tag/performative-event/" rel="tag">performative event</a>, <a href="http://archive.artsofself.com/tag/performativen-dogodek/" rel="tag">performativen dogodek</a>, <a href="http://archive.artsofself.com/tag/rampa-lab/" rel="tag">RAMPA Lab</a>, <a href="http://archive.artsofself.com/tag/smrt/" rel="tag">smrt</a>, <a href="http://archive.artsofself.com/tag/umiranje/" rel="tag">umiranje</a>, <a href="http://archive.artsofself.com/tag/vaje-v-umiranju/" rel="tag">Vaje v umiranju</a>, <a href="http://archive.artsofself.com/tag/zavod-kersnikova/" rel="tag">Zavod Kersnikova</a> on <a href="http://archive.artsofself.com/exercises-in-dying/" title="9:45 pm" rel="bookmark"><time class="entry-date" datetime="2017-02-25T21:45:25+00:00">February 25, 2017</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+			<nav id="nav-below" class="navigation" role="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+				<div class="nav-previous"><a href="http://archive.artsofself.com/category/mri-ms/page/2/"><span class="meta-nav">←</span> Older posts</a></div>
+				<div class="nav-next"></div>
+			</nav>
+		
+		
+		</div>
+	
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://archive.artsofself.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="http://archive.artsofself.com/hello-world/">Hello world!</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche-insight/">Insight into Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/jatun-risba-artist-in-residence-at-steam-atelier/">Jatun Risba – Artist in residence at STEAM Atelier</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche/">Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/summer2019/">A summer in movement…</a>
+									</li>
+					</ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">A WordPress Commenter</a></span> on <a href="http://archive.artsofself.com/hello-world/#comment-1">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.hataygencradyo.net" rel="external nofollow ugc" class="url">hala duruyonmu sen?</a></span> on <a href="http://archive.artsofself.com/interview-on-trance-and-performance-art/#comment-10">Interview on trance and performance art</a></li><li class="recentcomments"><span class="comment-author-link">Carla Kindler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-7">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Billy Hutcheon</span> on <a href="http://archive.artsofself.com/kontakt/#comment-6">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Jani Haszler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-5">KONTAKT</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+				<li><a href="http://archive.artsofself.com/2020/05/">May 2020</a></li>
+	<li><a href="http://archive.artsofself.com/2019/07/">July 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/06/">June 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/03/">March 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/02/">February 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/01/">January 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2018/09/">September 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/08/">August 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/07/">July 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/01/">January 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2017/12/">December 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/11/">November 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/10/">October 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/08/">August 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/04/">April 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/03/">March 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/02/">February 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/01/">January 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2016/08/">August 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/06/">June 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/05/">May 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/04/">April 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/02/">February 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/01/">January 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2015/12/">December 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/11/">November 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/10/">October 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/08/">August 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/07/">July 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/06/">June 2015</a></li>
+		</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+				<li class="cat-item cat-item-21"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodene-risbe/">Duhovodene risbe</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodeni-ples/">Duhovodeni ples</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/">Duhovodenost</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://archive.artsofself.com/category/forma-viva/">Forma Viva</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://archive.artsofself.com/category/tehnologije-us/inter-esse/">Inter-esse</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://archive.artsofself.com/category/tehnologije-us/javno-privatna-korespondenca/">Javno-privatna korespondenca</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/">Jutranje misli in samospraševanje</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/jutranje-misli-objave/">Jutranje misli objave</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://archive.artsofself.com/category/korespondenca-objave/">Korespondenca objave</a>
+</li>
+	<li class="cat-item cat-item-4 current-cat"><a aria-current="page" href="http://archive.artsofself.com/category/mri-ms/">MRI MS</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/">Performativni dogodki</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/pot-kzdravljenja/">Pot kzdravljenja</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/">Preobratni slovar</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/preobratni-slovar-objave/">Preobratni slovar objave</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/samosprasevanje-objave/">Samospraševanje objave</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://archive.artsofself.com/category/tehnologije-us/">Tehnologije US</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://archive.artsofself.com/category/uncategorized/">Uncategorized</a>
+</li>
+		</ul>
+			</aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://archive.artsofself.com/wp-login.php">Log in</a></li>
+			<li><a href="http://archive.artsofself.com/feed/">Entries feed</a></li>
+			<li><a href="http://archive.artsofself.com/comments/feed/">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>		</div>
+		</article></div>
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div>
+	</footer>
+</section></div>
+
+<script>
+	window.addEventListener('sfsi_plus_functions_loaded', function() {
+		if (typeof sfsi_plus_responsive_toggle == 'function') {
+			sfsi_plus_responsive_toggle(0);
+			console.log('sfsi_plus_responsive_toggle');
+
+		}
+	})
+</script>
+
+<link rel="stylesheet" id="basecss-css" href="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/jquery.shuffle.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/random-shuffle-min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sfsi_plus_ajax_object = {"ajax_url":"http:\/\/archive.artsofself.com\/wp-admin\/admin-ajax.php","plugin_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/"};
+var sfsi_plus_links = {"admin_url":"http:\/\/archive.artsofself.com\/wp-admin\/","plugin_dir_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/","pretty_perma":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/custom.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/themes/twentytwelve/js/navigation.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var eucookielaw_data = {"euCookieSet":"1","autoBlock":"0","expireTimer":"0","scrollConsent":"0","networkShareURL":"","isCookiePage":"","isRefererWebsite":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/js/scripts.js"></script>
+<script type="text/javascript">
+          (function() {
+            var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+            t.parentNode.insertBefore(s, t);
+          })();
+        </script></div></body>
+</html>

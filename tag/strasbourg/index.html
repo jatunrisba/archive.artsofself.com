@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Strasbourg | artsofself</title>
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="http://archive.artsofself.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_fonts-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="sumoselect-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/sumoselect.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mCustomScrollbar-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_googlefonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=greek,latin,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_frontend-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/styles.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="SFSIPLUSmainCss-css" href="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/css/sfsi-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="http://archive.artsofself.com/wp-content/themes/twentytwelve/style.css" type="text/css" media="all">
+
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.sumoselect.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.fullscreen-0.4.1.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_validation":"This is not a valid email address.","bwg_search_result":"There are no images matching your search.","bwg_select_tag":"Select Tag","bwg_order_by":"Order By","bwg_search":"Search","bwg_show_ecommerce":"Show Ecommerce","bwg_hide_ecommerce":"Hide Ecommerce","bwg_show_comments":"Show Comments","bwg_hide_comments":"Hide Comments","bwg_restore":"Restore","bwg_maximize":"Maximize","bwg_fullscreen":"Fullscreen","bwg_exit_fullscreen":"Exit Fullscreen","bwg_search_tag":"SEARCH...","bwg_tag_no_match":"No tags found","bwg_all_tags_selected":"All tags selected","bwg_tags_selected":"tags selected","play":"Play","pause":"Pause","is_pro":"","bwg_play":"Play","bwg_pause":"Pause","bwg_hide_info":"Hide info","bwg_show_info":"Show info","bwg_hide_rating":"Hide rating","bwg_show_rating":"Show rating","ok":"Ok","cancel":"Cancel","select_all":"Select all","lazy_load":"0","lazy_loader":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/photo-gallery\/images\/ajax_loader.png","front_ajax":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/scripts.min.js"></script>
+
+
+
+<script>
+	window.addEventListener("sfsi_plus_functions_loaded",function(){
+		var body= document.getElementsByTagName('body')[0];
+		console.log(body);
+		body.classList.add("sfsi_plus_3.26");
+	})
+	// window.addEventListener('sfsi_plus_functions_loaded',function(e) {
+	// 	jQuery("body").addClass("sfsi_plus_3.26")
+	// });
+
+	function sfsi_plus_processfurther(ref) {
+		var feed_id = '';
+		var feedtype = 8;
+		var email = jQuery(ref).find('input[name="data[Widget][email]"]').val();
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if ((email != "Enter your email") && (filter.test(email))) {
+			if (feed_id != "") {
+				if (feedtype == "8") {
+					var url = "https://www.specificfeeds.com/widgets/subscribeWidget/" + feed_id + "/" + feedtype;
+					window.open('', "popupwindow", "scrollbars=yes,width=1080,height=760");
+					ref.target = "popupwindow";
+					ref.action = url;
+					return true;
+				} else {
+					return false;
+				}
+			}
+		} else {
+			alert("Please enter email address");
+			jQuery(ref).find('input[name="data[Widget][email]"]').focus();
+			return false;
+		}
+	}
+</script>
+<style>
+	.sfsi_plus_subscribe_Popinner {
+		width: 100% !important;
+		height: auto !important;
+		border: 1px solid #b5b5b5 !important;
+		padding: 18px 0px !important;
+		background-color: #ffffff !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner form {
+		margin: 0 20px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner h5 {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		margin: 0 0 10px !important;
+		padding: 0 !important;
+	}
+
+	.sfsi_plus_subscription_form_field {
+		margin: 5px 0 !important;
+		width: 100% !important;
+		display: inline-flex;
+		display: -webkit-inline-flex;
+	}
+
+	.sfsi_plus_subscription_form_field input {
+		width: 100% !important;
+		padding: 10px 0px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-moz-placeholder {
+		/* Firefox 18- */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-moz-placeholder {
+		/* Firefox 19+ */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=submit] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		background-color: #dedede !important;
+	}
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="archive tag tag-strasbourg tag-580 do-etfw custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://archive.artsofself.com/" title="artsofself" rel="home">artsofself</a></h1>
+			<h2 class="site-description">Just another WordPress site</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul>
+<li><a href="http://archive.artsofself.com/">Home</a></li><li class="page_item page-item-920"><a href="http://archive.artsofself.com/about/">ABOUT</a></li>
+<li class="page_item page-item-1118"><a href="http://archive.artsofself.com/inter-esse/">INTER-ESSE</a></li>
+<li class="page_item page-item-1574"><a href="http://archive.artsofself.com/jatun-risba/">Jatun Risba</a></li>
+<li class="page_item page-item-1127"><a href="http://archive.artsofself.com/likovno-izrazanje/">Likovno izražanje</a></li>
+<li class="page_item page-item-1310"><a href="http://archive.artsofself.com/mri-ms/">MRI MS</a></li>
+<li class="page_item page-item-495 page_item_has_children"><a href="http://archive.artsofself.com/predstavitev/">O US</a>
+<ul class="children">
+	<li class="page_item page-item-67"><a href="http://archive.artsofself.com/predstavitev/us-so-ker-niso/">US SO, KER NISO</a></li>
+	<li class="page_item page-item-11"><a href="http://archive.artsofself.com/predstavitev/postani-umetnik-sebstva/">POSTANI UMETNIK SEBSTVA</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2"><a href="http://archive.artsofself.com/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-72 page_item_has_children"><a href="http://archive.artsofself.com/tehnologije/">TEHNOLOGIJE</a>
+<ul class="children">
+	<li class="page_item page-item-74"><a href="http://archive.artsofself.com/tehnologije/detournement/">DÉTOURNEMENT</a></li>
+	<li class="page_item page-item-86"><a href="http://archive.artsofself.com/tehnologije/fokusologija/">FOKUSOLOGIJA</a></li>
+	<li class="page_item page-item-1091"><a href="http://archive.artsofself.com/tehnologije/forma-viva/">FORMA VIVA</a></li>
+	<li class="page_item page-item-90"><a href="http://archive.artsofself.com/tehnologije/imagazinacija/">IMAGAZINACIJA</a></li>
+	<li class="page_item page-item-89"><a href="http://archive.artsofself.com/tehnologije/izleti-in-ture/">IZLETI IN TURE</a></li>
+	<li class="page_item page-item-96"><a href="http://archive.artsofself.com/tehnologije/korespondenca/">JAVNO-PRIVATNA KORESPONDENCA</a></li>
+	<li class="page_item page-item-107"><a href="http://archive.artsofself.com/tehnologije/jutranje-misli-in-samosprasevanje/">JUTRANJE MISLI in SAMOSPRAŠEVANJE</a></li>
+	<li class="page_item page-item-101"><a href="http://archive.artsofself.com/tehnologije/sprehodialogi/">MAJEVTIČNI SPREHODIALOGI</a></li>
+	<li class="page_item page-item-117"><a href="http://archive.artsofself.com/tehnologije/preobratni-slovar/">PREOBRATNI SLOVAR</a></li>
+	<li class="page_item page-item-122"><a href="http://archive.artsofself.com/tehnologije/strahopremet/">STRAHOPREMET</a></li>
+	<li class="page_item page-item-126"><a href="http://archive.artsofself.com/tehnologije/zvezek-idej/">ZVEZEK IDEJ</a></li>
+</ul>
+</li>
+<li class="page_item page-item-287"><a href="http://archive.artsofself.com/pomagala/">POMAGALA</a></li>
+<li class="page_item page-item-134"><a href="http://archive.artsofself.com/besednjak/">BESEDNJAK</a></li>
+<li class="page_item page-item-26 page_item_has_children"><a href="http://archive.artsofself.com/eticni-kodeks/">ETIČNI KODEKS</a>
+<ul class="children">
+	<li class="page_item page-item-40"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-mediji/">US IN MEDIJI</a></li>
+	<li class="page_item page-item-43"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-festivali/">US IN FESTIVALI</a></li>
+	<li class="page_item page-item-53"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-avtorsko-pravo/">US IN AVTORSKO PRAVO</a></li>
+</ul>
+</li>
+<li class="page_item page-item-139"><a href="http://archive.artsofself.com/predhodniki/">PREDHODNIKI</a></li>
+<li class="page_item page-item-149"><a href="http://archive.artsofself.com/zahvale/">ZAHVALE</a></li>
+<li class="page_item page-item-130 page_item_has_children"><a href="http://archive.artsofself.com/kontakt/">KONTAKT</a>
+<ul class="children">
+	<li class="page_item page-item-128"><a href="http://archive.artsofself.com/kontakt/o-avtorju-strani/">O AVTORJU STRANI</a></li>
+</ul>
+</li>
+</ul></div>
+		</nav>
+
+			</header>
+
+	<div id="main" class="wrapper">
+
+	<section id="primary" class="site-content">
+		<div id="content" role="main">
+
+					<header class="archive-header">
+				<h1 class="archive-title">Tag Archives: <span>Strasbourg</span></h1>
+
+						</header>
+
+			
+	<article id="post-1791" class="post-1791 post type-post status-publish format-standard hentry category-uncategorized tag-apuglia tag-artist-residency tag-artperformingfetival tag-heallo tag-ladiyfest tag-lecce tag-mpasturavacche tag-notte-della-taranta tag-outsideininsideoutinsideoutoutsidein tag-salento tag-steam-atelier tag-strasbourg tag-taranta tag-tarantism">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/summer2019/" rel="bookmark">A summer in movement…</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/summer2019/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p>We are glad to announce that<strong> Jatun Risba will spend their summer in S of italy, doing a 2-months artist-in-residence program at <a href="http://steamatelier.eu/" target="_blank" rel="noopener noreferrer">STEAM Atelier</a> in Lecce (LE) under the title: “The care of self and dancing comunities in the contemporary, technological world”</strong>. During this period, the artist will develop, in coproduction with the hosting organization, two new intermedia works: <strong>Mpasturavacche and Heallo.</strong></p>
+<p>The immersive one-to-one performance <strong>Mpasturavacche will be first presented at the <a href="http://www.artperformingfestival.it" target="_blank" rel="noopener noreferrer">Artperforming festival</a> at Galatina (LE) on the 5th of July and then again, in the first days of August, at the artist-run festival <a href="https://www.facebook.com/outsideininsideoutinsideoutoutsidein/">OutsideininsideoutinsideoutoutsideiN</a></strong> on the border between Germany and Czech Republic.</p>
+<div style="width: 730px" class="wp-caption alignnone"><img class="size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/65210164_1062224203988451_1517069666848079872_n.jpg?_nc_cat=101&_nc_oc=AQkDBFpI9ZnrpZ5UeS-5n_oy_ImRMZWJEkdg9JVR0FSDHoz8lyz_8pZ-lOTfZGKbCB4&_nc_ht=scontent-frx5-1.xx&oh=b1593ea64015262ba94580ff43294340&oe=5D796C6D" width="720" height="960"><p class="wp-caption-text">the prototype developed during the first working session on the project Mpasturavacche</p></div>
+<p>Risba will take part also in the Artperforming festival in Napoli. <strong>Starting on the 27th July morning, the artist will enact the work <a href="https://www.facebook.com/Exercisesindying/" target="_blank" rel="noopener noreferrer">Excercises in Dying</a> for 24-hrs, in a different set-up and agenda than in the year 2017.</strong></p>
+<p><strong>The intermedia work Heallo, which takes the form of a technology and sensory </strong>augmented happening, will <strong>be developed throughout the whole period of the residence </strong>at STEAM  Atelier in collaboration with a number of professionals working in different fields<strong> and launched at the art festival <a href="http://www.pixxelpoint.org/" target="_blank" rel="noopener noreferrer">Pixxelpoint 2019</a> on the 21st of November in Nova Gorica, Slovenia. In parallel to the work on Heallo, Risba will use their residency in Salento (Apuglia) to do a field study of the ancient dance ritual of “<a href="https://en.wikipedia.org/wiki/Tarantism" target="_blank" rel="noopener noreferrer">Tarantismo</a>”</strong>, a social and anthropological phenomena that is now celebrated, through spectacularization, at “<a href="https://www.lanottedellataranta.it/en/" target="_blank" rel="noopener noreferrer">La notte della Taranta</a>” festival.</p>
+<p><strong>Finally, in the last days of August, Risba will travel to Strasbourg to attend the<a href="https://www.facebook.com/laDIYfestSTRAS/" target="_blank" rel="noopener noreferrer"> ladiyFEST #2</a></strong>, the festival ki* attended already last year with the actio, installation and workshop <a href="https://www.facebook.com/NotAnAdolescentGirl/" target="_blank" rel="noopener noreferrer">Not an Adolescent Girl</a>. This year, the artist<strong> will enact the intermedia performance Mpasturavacche and facilitate a somatic workshop “Possession dance. In, out and beyond self”.</strong></p>
+<p>*Jatun Risba uses the pronoun ki, to set an impartial tone where the existence of all living beings within an animate is acknowledged and praised.</p>
+<p><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1059945260883012%26id%3D100006026448777&width=500" width="500" height="531" frameborder="0" scrolling="no"></iframe></p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/apuglia/" rel="tag">Apuglia</a>, <a href="http://archive.artsofself.com/tag/artist-residency/" rel="tag">Artist residency</a>, <a href="http://archive.artsofself.com/tag/artperformingfetival/" rel="tag">Artperformingfetival</a>, <a href="http://archive.artsofself.com/tag/heallo/" rel="tag">Heallo</a>, <a href="http://archive.artsofself.com/tag/ladiyfest/" rel="tag">LadiyFEST</a>, <a href="http://archive.artsofself.com/tag/lecce/" rel="tag">Lecce</a>, <a href="http://archive.artsofself.com/tag/mpasturavacche/" rel="tag">Mpasturavacche</a>, <a href="http://archive.artsofself.com/tag/notte-della-taranta/" rel="tag">Notte della taranta</a>, <a href="http://archive.artsofself.com/tag/outsideininsideoutinsideoutoutsidein/" rel="tag">OutsideininsideoutinsideoutoutsideiN</a>, <a href="http://archive.artsofself.com/tag/salento/" rel="tag">Salento</a>, <a href="http://archive.artsofself.com/tag/steam-atelier/" rel="tag">STEAM Atelier</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/taranta/" rel="tag">taranta</a>, <a href="http://archive.artsofself.com/tag/tarantism/" rel="tag">Tarantism</a> on <a href="http://archive.artsofself.com/summer2019/" title="11:08 am" rel="bookmark"><time class="entry-date" datetime="2019-06-23T11:08:55+00:00">June 23, 2019</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1769" class="post-1769 post type-post status-publish format-standard hentry category-uncategorized tag-choremanies tag-dance-epidemic-of-1518 tag-dancing-mania tag-dancing-plague tag-guillaume-sintes tag-janig-begoc tag-johanna-renard tag-strasbourg tag-trance tag-trance-in-art tag-university-of-strasbourg">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/performance-lecture-trance-in-art/" rel="bookmark">Performance lecture Trance in Art</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/performance-lecture-trance-in-art/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><span><strong>On the 18th of March, Jatun Risba held a performance lecture “Trance in Art” at the University of Strasbourg. </strong></span></p>
+<p><span>The lecture was part of the Interdisciplinary Seminar “Choremanies: gestural, emotional and sonic contagions” that looked at </span><span> the dance epidemic of 1518 from different angles and accross disciplines (history, history of medicine, studies of emotions, neuroscience, history of dance and performative practices). Through a series of professional guest interventions, the seminar allowed first-year Master of Arts students to question the discourses, norms and social practices that are emerging through this historical episode. </span></p>
+<p><span>Choremanies Seminar Organizers: Janig Bégoc, Johanna Renard and Guillaume Sintès.</span></p>
+<p><img class="alignnone wp-image-1770 size-full" src="http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3.jpeg" alt="" width="1600" height="1200" srcset="http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3.jpeg 1600w,http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3-300x225.jpeg 300w,http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3-1024x768.jpeg 1024w,http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3-768x576.jpeg 768w,http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3-1536x1152.jpeg 1536w,http://archive.artsofself.com/wp-content/uploads/2019/06/FOTO3-1200x900.jpeg 1200w" sizes="(max-width: 1600px) 100vw, 1600px">Self-hypnosis demonstration during the performance lecture by Jatun Risba</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/choremanies/" rel="tag">Choremanies</a>, <a href="http://archive.artsofself.com/tag/dance-epidemic-of-1518/" rel="tag">dance epidemic of 1518</a>, <a href="http://archive.artsofself.com/tag/dancing-mania/" rel="tag">dancing mania</a>, <a href="http://archive.artsofself.com/tag/dancing-plague/" rel="tag">dancing plague</a>, <a href="http://archive.artsofself.com/tag/guillaume-sintes/" rel="tag">Guillaume Sintès.</a>, <a href="http://archive.artsofself.com/tag/janig-begoc/" rel="tag">Janig Bégoc</a>, <a href="http://archive.artsofself.com/tag/johanna-renard/" rel="tag">Johanna Renard</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/trance/" rel="tag">trance</a>, <a href="http://archive.artsofself.com/tag/trance-in-art/" rel="tag">trance in art</a>, <a href="http://archive.artsofself.com/tag/university-of-strasbourg/" rel="tag">University of Strasbourg</a> on <a href="http://archive.artsofself.com/performance-lecture-trance-in-art/" title="2:29 pm" rel="bookmark"><time class="entry-date" datetime="2019-06-20T14:29:02+00:00">June 20, 2019</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1727" class="post-1727 post type-post status-publish format-standard hentry category-uncategorized tag-body-mind-practice tag-hypnotic-dance tag-iona tag-jatun-risba tag-milan tag-observation tag-stillness-in-movement tag-strasbourg tag-training tag-workshop">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/introductory-course-of-hypnotic-dance/" rel="bookmark">INTRODUCTORY COURSE OF HYPNOTIC DANCE</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/introductory-course-of-hypnotic-dance/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><a href="https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/52974053_781536988884164_7560777960211349504_n.jpg?_nc_cat=107&_nc_oc=AQmkrcbu6qZT6zO2l80LDGdDehHOZBDIwHvdG6M7OKPn9UwXZBuFL8kBIJUBdiei-4o&_nc_ht=scontent-mxp1-1.xx&oh=b677a021e34f403b3c23c730e7e8d94f&oe=5DB7238F" target="_blank" rel="noopener noreferrer"><img class="alignnone" src="https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/52974053_781536988884164_7560777960211349504_n.jpg?_nc_cat=107&_nc_oc=AQmkrcbu6qZT6zO2l80LDGdDehHOZBDIwHvdG6M7OKPn9UwXZBuFL8kBIJUBdiei-4o&_nc_ht=scontent-mxp1-1.xx&oh=b677a021e34f403b3c23c730e7e8d94f&oe=5DB7238F" alt="" width="960" height="676"></a></p>
+<p>Join the first course of Hypnotic Dance in the lovely city of Strasbourg, France on Saturday 23rd and Sunday 24th of March. The course will be held – same schedule and costs – the coming weekend (30th & 31st of March) in Milan. Reserve your place at jatun.risba@gmail.com.</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/body-mind-practice/" rel="tag">body-mind practice</a>, <a href="http://archive.artsofself.com/tag/hypnotic-dance/" rel="tag">Hypnotic dance</a>, <a href="http://archive.artsofself.com/tag/iona/" rel="tag">IONA</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/milan/" rel="tag">Milan</a>, <a href="http://archive.artsofself.com/tag/observation/" rel="tag">observation</a>, <a href="http://archive.artsofself.com/tag/stillness-in-movement/" rel="tag">stillness in movement</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/training/" rel="tag">training</a>, <a href="http://archive.artsofself.com/tag/workshop/" rel="tag">workshop</a> on <a href="http://archive.artsofself.com/introductory-course-of-hypnotic-dance/" title="4:17 pm" rel="bookmark"><time class="entry-date" datetime="2019-03-08T16:17:27+00:00">March 8, 2019</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1677" class="post-1677 post type-post status-publish format-standard hentry category-uncategorized tag-artperformingfetival tag-elisabetta-longari tag-fabbrica-del-vapore tag-gianni-nappa tag-heallo tag-hti tag-hypnotherapy-training-international tag-lada tag-london tag-milano tag-not-an-adolescent-girl tag-peter-purg tag-pixxelpoint tag-stand-for-girls tag-steam-atelier tag-strasbourg tag-taranta">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/looking-back-see-future/" rel="bookmark">Looking Back to See the Future</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/looking-back-see-future/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong>Activities in UK</strong></p>
+<p>In November 2018 Jatun Risba moved to London and started a self-directed research residency at <a href="http://www.thisisliveart.co.uk/about" target="_blank" rel="noopener noreferrer">Live Arts Development Agency – LADA</a> about the use, role and technique of Trance in Contemporary Live Arts, as well as a Diploma course in hypnotherapy with Dr. John Butler at the <a href="https://hypnotherapytraininginternational.com/hypnotherapy-training-courses/complete-training/" target="_blank" rel="noopener noreferrer">HTI. Hypnotherapy Training International</a>.</p>
+<p><a href="http://www.thisisliveart.co.uk/cache/images/uploads/blog/lada+name212_570_468.jpg"><img class="alignnone" src="http://www.thisisliveart.co.uk/cache/images/uploads/blog/lada+name212_570_468.jpg" alt="" width="293" height="421"></a><a href="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/43640533_911603765717163_3685621705687957504_n.jpg?_nc_cat=100&_nc_ht=scontent-lht6-1.xx&oh=a4089cb1854d0ad2c4a6420ed73fbd97&oe=5CB32A48"><img class="alignnone" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/43640533_911603765717163_3685621705687957504_n.jpg?_nc_cat=100&_nc_ht=scontent-lht6-1.xx&oh=a4089cb1854d0ad2c4a6420ed73fbd97&oe=5CB32A48" alt="" width="320" height="240"></a></p>
+<p><strong>Activities in Italy</strong></p>
+<p>In February 2019 the work <a href="https://www.facebook.com/NotAnAdolescentGirl/" target="_blank" rel="noopener noreferrer">Not an Adolescent Girl</a> will be part of the art exhibition Stand for Girls, curated by Elisabetta Longari, at Fabbrica del Vapore, Milano. In July and August 2019, Risba will be an Artist in Residence at the <a href="https://www.facebook.com/STEAMAtelier/" target="_blank" rel="noopener noreferrer">STEAM Atelier </a>in Lecce for a field research about taranta and the production of a new performance-based intermedia work ‘Heallo’. Jatun Risba was invited to participate at the <a href="https://www.facebook.com/artperformingfestival/" target="_blank" rel="noopener noreferrer">Artperformingfestival</a>, curated by Gianni Nappa, that will be held at PAN Palazzo delle Arti Napoli between the 20th of July and the 2nd of August 2019.</p>
+<p><img class="alignnone wp-image-1682 size-full" src="http://archive.artsofself.com/wp-content/uploads/2019/01/40973650_237915233564223_2938301957439225856_n.jpg" alt="" width="960" height="540" srcset="http://archive.artsofself.com/wp-content/uploads/2019/01/40973650_237915233564223_2938301957439225856_n.jpg 960w,http://archive.artsofself.com/wp-content/uploads/2019/01/40973650_237915233564223_2938301957439225856_n-300x169.jpg 300w,http://archive.artsofself.com/wp-content/uploads/2019/01/40973650_237915233564223_2938301957439225856_n-768x432.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></p>
+<p><strong>Activities in France</strong></p>
+<p>Jatun will return to Strasbourg, France in March to give a performative lecture at the University of Fine Arts about trance and to lead a workshop of Interesse dance.</p>
+<p><strong>Activities in Slovenia</strong></p>
+<p>In November 2019, the work ‘Heallo’ will be launched at the 20th edition of the Festival of Contemporary Art Practices <a href="https://www.facebook.com/pixxelpoint/" target="_blank" rel="noopener noreferrer">PIXXELPOINT 2019</a>, curated by Peter Purg, in Nova Gorica.</p>
+<p> </p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/artperformingfetival/" rel="tag">Artperformingfetival</a>, <a href="http://archive.artsofself.com/tag/elisabetta-longari/" rel="tag">Elisabetta Longari</a>, <a href="http://archive.artsofself.com/tag/fabbrica-del-vapore/" rel="tag">Fabbrica del Vapore</a>, <a href="http://archive.artsofself.com/tag/gianni-nappa/" rel="tag">Gianni Nappa</a>, <a href="http://archive.artsofself.com/tag/heallo/" rel="tag">Heallo</a>, <a href="http://archive.artsofself.com/tag/hti/" rel="tag">HTI</a>, <a href="http://archive.artsofself.com/tag/hypnotherapy-training-international/" rel="tag">Hypnotherapy Training International</a>, <a href="http://archive.artsofself.com/tag/lada/" rel="tag">LADA</a>, <a href="http://archive.artsofself.com/tag/london/" rel="tag">London</a>, <a href="http://archive.artsofself.com/tag/milano/" rel="tag">Milano</a>, <a href="http://archive.artsofself.com/tag/not-an-adolescent-girl/" rel="tag">Not an adolescent girl</a>, <a href="http://archive.artsofself.com/tag/peter-purg/" rel="tag">Peter Purg</a>, <a href="http://archive.artsofself.com/tag/pixxelpoint/" rel="tag">Pixxelpoint</a>, <a href="http://archive.artsofself.com/tag/stand-for-girls/" rel="tag">Stand for Girls</a>, <a href="http://archive.artsofself.com/tag/steam-atelier/" rel="tag">STEAM Atelier</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/taranta/" rel="tag">taranta</a> on <a href="http://archive.artsofself.com/looking-back-see-future/" title="10:10 am" rel="bookmark"><time class="entry-date" datetime="2019-01-28T10:10:09+00:00">January 28, 2019</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1600" class="post-1600 post type-post status-publish format-standard hentry category-uncategorized tag-arts-of-self tag-jatun-risba tag-not-an-adolescent-girl tag-strasbourg tag-tara-mandala tag-tsultrim-allione">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/not-an-adolescent-girl/" rel="bookmark">Not an Adolescent Girl</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/not-an-adolescent-girl/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<div class="m_-9170536431445514163gmail_signature" dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr"><a href="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/40197087_235007027188377_1007369813179236352_n.png?_nc_cat=111&_nc_eui2=AeFp4Tr55XuvBQpKFUSt6Jng35ztP65aXVDvL6qljRXN8UuGniCJGmVjoU3-ZgHMpddxKYsRuqc0hszGbrdCG0Lad10KtQutnGLN2McBRavHIw&_nc_ht=scontent-frx5-1.xx&oh=97f165930f155f7d1253d731463bbf78&oe=5D787167"><img class="alignnone size-medium" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/40197087_235007027188377_1007369813179236352_n.png?_nc_cat=111&_nc_eui2=AeFp4Tr55XuvBQpKFUSt6Jng35ztP65aXVDvL6qljRXN8UuGniCJGmVjoU3-ZgHMpddxKYsRuqc0hszGbrdCG0Lad10KtQutnGLN2McBRavHIw&_nc_ht=scontent-frx5-1.xx&oh=97f165930f155f7d1253d731463bbf78&oe=5D787167" width="960" height="960"></a></div>
+</div>
+</div>
+<div dir="ltr">
+<div dir="ltr">
+<div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div></div>
+<div>Vivid eyes in a place</div>
+<div>                          space</div>
+<div></div>
+<div>
+<p> </p>
+</div>
+<div></div>
+<div></div>
+<div>                          wide open …</div>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<div></div>
+<p> </p>
+<p><span style="font-size: 1rem;"><strong>A</strong> </span><strong style="font-size: 1rem;">new Arts of Self wor</strong><strong>k<span style="font-size: 1rem;"> by </span>Jatun Risba</strong><span style="font-size: 1rem;"> <strong>that nurtures and nourishes the spirits of oppressed adolescent girls beyond past and present. </strong></span><span style="font-size: 1rem;">The first presentation of the project will occur at </span><a href="https://ladiyfeststrasbourg.wordpress.com">LaDIY*fest</a> in Strasbourg, France<span style="font-size: 1rem;"> as follows:</span></p>
+</div>
+<div class="m_-9170536431445514163gmail_signature" dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">
+<p> </p>
+<div>
+<p><span style="font-size: 1rem;">+ PRESENTATION (art installation)  </span><b style="font-size: 1rem;">When </b><span style="font-size: 1rem;">:  30th of August from 7 pm  </span><b style="font-size: 1rem;">Where</b><span style="font-size: 1rem;"> : <a href="https://www.google.fr/maps/place/1+Rue+Merci%C3%A8re,+67000+Strasbourg/@48.5812564,7.7469775,17z/data=!3m1!4b1!4m5!3m4!1s0x4796c852fa3fd3ed:0x1f00843b512a2e5e!8m2!3d48.5812564!4d7.7491662">1 rue Mercière</a></span></p>
+<p><span style="font-size: 1rem;">+ WORKSHOP </span><b style="font-size: 1rem;"> When</b><span style="font-size: 1rem;"> : 31st of August  from 6 pm > 7.30 pm </span><b style="font-size: 1rem;">Where</b><span style="font-size: 1rem;"> : <a href="https://www.google.fr/maps/place/1+Rue+Merci%C3%A8re,+67000+Strasbourg/@48.5812564,7.7469775,17z/data=!3m1!4b1!4m5!3m4!1s0x4796c852fa3fd3ed:0x1f00843b512a2e5e!8m2!3d48.5812564!4d7.7491662">1 rue Mercière</a></span></p>
+</div>
+<div>
+<div>+ PERFORMANCE (live actio)<b> Whe</b><strong>n</strong> : 1st of September from 7pm <b>Where</b> : 10 amant-e-s d’Or</div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<div><span style="font-size: 1rem;">The aim of the workshop is to collectively </span><span style="font-size: 1rem;"><span style="font-size: 1rem;">address the demons of adolescence − powers, energies, social constructs and behavioral patterns − we were subjected to in our puberty. After an open dialogue about our teenage experiences, the participants will go through the process of Feeding your demons,</span></span><span style="font-size: 1rem;"><span style="font-size: 1rem;"> developed by Lama Tsultrim Allione, in order to embody, feed and free the manifested energies.</span></span></div>
+<div>
+<div></div>
+<p> </p>
+<div>
+<p><img class="ajT" style="font-size: 1rem;" src="https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif"><span style="font-size: 1rem;">The </span><strong style="font-size: 1rem;">live actio will be streamed</strong><span style="font-size: 1rem;"> on the project’s </span><a style="font-size: 1rem;" href="https://www.facebook.com/NotAnAdolescentGirl/">fb page</a><span style="font-size: 1rem;">. Like the page to easily follow the updates of the project. </span></p>
+</div>
+</div>
+</div>
+<div tabindex="0" role="button" data-tooltip="Show trimmed content" aria-label="Show trimmed content"></div>
+<div tabindex="0" role="button" data-tooltip="Show trimmed content" aria-label="Show trimmed content"></div>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/arts-of-self/" rel="tag">arts of self</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/not-an-adolescent-girl/" rel="tag">Not an adolescent girl</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/tara-mandala/" rel="tag">Tara Mandala</a>, <a href="http://archive.artsofself.com/tag/tsultrim-allione/" rel="tag">Tsultrim Allione</a> on <a href="http://archive.artsofself.com/not-an-adolescent-girl/" title="9:46 am" rel="bookmark"><time class="entry-date" datetime="2018-08-27T09:46:46+00:00">August 27, 2018</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1218" class="post-1218 post type-post status-publish format-standard hentry category-inter-esse tag-a-head-full-of-ideas tag-art-intervention tag-arts-of-self tag-eu tag-eu-parliament tag-european-union tag-european-youth-event tag-eye tag-eye-2016 tag-gmo tag-hemicycle tag-inter-esse tag-intervention tag-jatun-risba tag-mairead-mcguinness tag-march-against-monsanto tag-mep tag-monsanto tag-performance tag-performative-action tag-strasbourg tag-vice-president-eu tag-youth-forum">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/know-thyself-videos/" rel="bookmark">Know Thyself videos</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/know-thyself-videos/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><iframe width="625" height="352" src="https://www.youtube.com/embed/Oto-X5Af6mY?feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://player.vimeo.com/video/167752201" width="625" height="352" frameborder="0" title="KnowThyself, art intervention in the EU parliament (back view)" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+<p>Know thyself was an art intervention held on the 21st of May 2016 in the EU Parliament building in Strasbourg. Read the PR of the performative action <a href="http://artsofself.com/knowthyself/">here</a>.</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/tehnologije-us/inter-esse/" rel="category tag">Inter-esse</a> and tagged <a href="http://archive.artsofself.com/tag/a-head-full-of-ideas/" rel="tag">A Head full of Ideas</a>, <a href="http://archive.artsofself.com/tag/art-intervention/" rel="tag">Art Intervention</a>, <a href="http://archive.artsofself.com/tag/arts-of-self/" rel="tag">arts of self</a>, <a href="http://archive.artsofself.com/tag/eu/" rel="tag">EU</a>, <a href="http://archive.artsofself.com/tag/eu-parliament/" rel="tag">EU Parliament</a>, <a href="http://archive.artsofself.com/tag/european-union/" rel="tag">European Union</a>, <a href="http://archive.artsofself.com/tag/european-youth-event/" rel="tag">European Youth Event</a>, <a href="http://archive.artsofself.com/tag/eye/" rel="tag">EYE</a>, <a href="http://archive.artsofself.com/tag/eye-2016/" rel="tag">EYE 2016</a>, <a href="http://archive.artsofself.com/tag/gmo/" rel="tag">GMO</a>, <a href="http://archive.artsofself.com/tag/hemicycle/" rel="tag">Hemicycle</a>, <a href="http://archive.artsofself.com/tag/inter-esse/" rel="tag">inter-esse</a>, <a href="http://archive.artsofself.com/tag/intervention/" rel="tag">intervention</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/mairead-mcguinness/" rel="tag">Mairead McGuinness</a>, <a href="http://archive.artsofself.com/tag/march-against-monsanto/" rel="tag">March against Monsanto</a>, <a href="http://archive.artsofself.com/tag/mep/" rel="tag">MEP</a>, <a href="http://archive.artsofself.com/tag/monsanto/" rel="tag">Monsanto</a>, <a href="http://archive.artsofself.com/tag/performance/" rel="tag">performance</a>, <a href="http://archive.artsofself.com/tag/performative-action/" rel="tag">performative action</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/vice-president-eu/" rel="tag">Vice-President EU</a>, <a href="http://archive.artsofself.com/tag/youth-forum/" rel="tag">Youth Forum</a> on <a href="http://archive.artsofself.com/know-thyself-videos/" title="5:28 pm" rel="bookmark"><time class="entry-date" datetime="2016-05-23T17:28:59+00:00">May 23, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+	<article id="post-1199" class="post-1199 post type-post status-publish format-standard hentry category-inter-esse category-uncategorized tag-21st-of-may tag-art-intervention tag-arts-of-self tag-dialogue tag-european-youth-event-2016 tag-eye-2016 tag-fear-of-otherness tag-gmo tag-hemicycle tag-homo-sacer tag-inter-esse tag-jatun-risba tag-know-thyself tag-march-against-monsanto tag-monsanto tag-otherness tag-performance tag-self tag-strasbourg tag-world-day-of-cultural-diversity-for-dialogue-and-development">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/knowthyself/" rel="bookmark">Know thyself PRESS RELEASE</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/knowthyself/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p> </p>
+<p><strong><u>FOR IMMEDIATE RELEASE</u></strong></p>
+<p><span style="color: #5e0365;"><strong>Art intervention </strong><strong><em>Know thyself</em></strong> </span>occurs in EU Parliament on World Diversity Day</p>
+<p><strong> </strong></p>
+<p><strong>STRASBOURG, FR, – May 21, 2016 – </strong>In the Hemicycle of the EU Parliament, during the Closing Plenary Session of the European Youth Event 2016, Artist of Self <strong>Jatun Risba</strong> carried out the art intervention <strong><em>Know thyself</em></strong> claiming the necessity for a more embracing, supportive and compassionate society founded on the awareness of the Interconnectedness of All Life.</p>
+<p> </p>
+<p>Those present in the Hemicycle were exposed to an intervention of the  <strong>Movement & Vocalization Awareness Practice</strong> called <strong><em>INTER-ESSE</em> </strong>(Latin for “to be in-between”): a self-cultivating activity that fosters well-being and creativity while promoting social integration and empathy.  By revealing the liminal expressions of the thinking body − movement, gesture, voice and contact in the functioning of the autonomic nervous system, at the level of the limbic system[1] − the art intervention in the EU Parliament aimed to destigmatise social constructions of awkwardness and the “fear of Otherness” that indeed, Risba states, – : “[…] arises from the fear of the other within ourselves and from the fear of nothingness of individual self.” The performative action was held on the 21st of May – <em>World Day for Cultural Diversity for Dialogue and Development –</em> for a reason; its message being that a genuine dialogue with others can emerge only after we dare to acknowledge and listen to our selfless embodied consciousness without fear.  It is the fear that ultimately creates violence and oppression.</p>
+<p><strong><em> </em></strong></p>
+<p><strong><em>KNOW THYSELF</em></strong> <strong>MANIFESTS THE DESIRE OF EUROPEAN YOUTH TO LIVE A FREE, INFORMED, HEALTHY, ACTIVE AND RESPECTFUL LIFE, WHILE RECOGNIZING THE CRUCIAL NEED OF BEING PART OF A SANE SOCIETY IN ORDER TO FULLY ACHIEVE IT. This is why </strong><strong><em>Know thyself</em></strong><strong> supports the claims of the March against Monsanto for the boycott of Genetically Modified Organisms (GMOs) and all harmful agro-chemicals AS THERE IS NO CURE IF NOT WITHIN THE SOCIETY ITSELF.</strong></p>
+<p> </p>
+<p><span style="text-decoration: underline;"><strong>About Inter-esse</strong></span></p>
+<p><em>Inter-esse </em>practice researches the conditions:</p>
+<ol>
+<li><strong> In-between consciousness and non-consciousness</strong>: Spontaneous rhythmic breathing & repetitive movements bring a state of full awareness in motion.</li>
+</ol>
+<ol start="2">
+<li><strong> In-between human subjects</strong>: The main focus is the synchronization of people through movements and breath.</li>
+</ol>
+<ol start="3">
+<li><strong> In-between life and death</strong><em>: Inter-esse </em>is a meditation on death in motion intended as a key to better living. It makes disciples aware of the constructed and hence illusory nature of personal identity. Through the shedding of individual self, <em>Inter-esse</em> promotes metacognitive awareness which arises from a holistic experience of humanness.</li>
+</ol>
+<p>The<em> Inter-esse </em>performance can be seen as the dance of the “<em>homo sacer</em>“[2], as it encompasses both the sense of the “hallowed” (the <em>Inter-esse</em> practitioner is someone who operates outside the fiction of autobiographical self and their social status) and that of “cursed” (the boundaryless self has been expelled from (post-) industrial societies through the modern concepts of insanity as mental illness and of health and self as personal properties).</p>
+<p> </p>
+<p><strong><u>About Artist of Self Jatun Risba</u></strong></p>
+<p>Jatun Risba is the pioneer of transformative art practices named <em>Arts of Self</em>, a body-mind researcher and performer. <em>Arts of Self </em>is a metaartistic proposal that promotes the use of self-cultivating technologies (“arts of self”), which disclosure and enforce human innate capacities in order to produce personal and collective self-empowerment. The website of the <em>Arts of Self</em>’s initiative can be found at <a href="http://www.artsofself.com/">www.artsofself.com</a>.</p>
+<p> </p>
+<p><strong><u>Contact Information</u></strong></p>
+<p>Telephone: +386-51-776-933 (Jatun Risba)</p>
+<p>Email Address:  <a href="mailto:jatun.risba@gmail.com">jatun.risba@gmail.com</a></p>
+<p> </p>
+<hr>
+<p><strong> </strong>[1] A group of interconnected structures of the brain including the hypothalamus, amydala, and hippocampus that are common to all mammals, and are associated with emotions such as fear and pleasure, memory, motivation, as well as with the release of endorphins , body’s natural opiates, and various autonomic functions.</p>
+<p>[2] <em>Homo sacer</em> (Latin for “the sacred man” or “the accursed man”) is a figure of Roman law: a person who is banned and may be killed by anybody, but may not be sacrificed in a religious ritual. More on the subject can be found in Giorgio Agamben, “<em>Homo Sacer: Sovereign Power and Bare Life</em>” (1998)</p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/tehnologije-us/inter-esse/" rel="category tag">Inter-esse</a>, <a href="http://archive.artsofself.com/category/uncategorized/" rel="category tag">Uncategorized</a> and tagged <a href="http://archive.artsofself.com/tag/21st-of-may/" rel="tag">21st of May</a>, <a href="http://archive.artsofself.com/tag/art-intervention/" rel="tag">Art Intervention</a>, <a href="http://archive.artsofself.com/tag/arts-of-self/" rel="tag">arts of self</a>, <a href="http://archive.artsofself.com/tag/dialogue/" rel="tag">Dialogue</a>, <a href="http://archive.artsofself.com/tag/european-youth-event-2016/" rel="tag">European Youth Event 2016</a>, <a href="http://archive.artsofself.com/tag/eye-2016/" rel="tag">EYE 2016</a>, <a href="http://archive.artsofself.com/tag/fear-of-otherness/" rel="tag">Fear of otherness</a>, <a href="http://archive.artsofself.com/tag/gmo/" rel="tag">GMO</a>, <a href="http://archive.artsofself.com/tag/hemicycle/" rel="tag">Hemicycle</a>, <a href="http://archive.artsofself.com/tag/homo-sacer/" rel="tag">homo sacer</a>, <a href="http://archive.artsofself.com/tag/inter-esse/" rel="tag">inter-esse</a>, <a href="http://archive.artsofself.com/tag/jatun-risba/" rel="tag">Jatun Risba</a>, <a href="http://archive.artsofself.com/tag/know-thyself/" rel="tag">Know thyself</a>, <a href="http://archive.artsofself.com/tag/march-against-monsanto/" rel="tag">March against Monsanto</a>, <a href="http://archive.artsofself.com/tag/monsanto/" rel="tag">Monsanto</a>, <a href="http://archive.artsofself.com/tag/otherness/" rel="tag">Otherness</a>, <a href="http://archive.artsofself.com/tag/performance/" rel="tag">performance</a>, <a href="http://archive.artsofself.com/tag/self/" rel="tag">Self</a>, <a href="http://archive.artsofself.com/tag/strasbourg/" rel="tag">Strasbourg</a>, <a href="http://archive.artsofself.com/tag/world-day-of-cultural-diversity-for-dialogue-and-development/" rel="tag">World Day of Cultural Diversity for Dialogue and Development</a> on <a href="http://archive.artsofself.com/knowthyself/" title="7:30 am" rel="bookmark"><time class="entry-date" datetime="2016-05-21T07:30:50+00:00">May 21, 2016</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+		
+		</div>
+	</section>
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://archive.artsofself.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="http://archive.artsofself.com/hello-world/">Hello world!</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche-insight/">Insight into Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/jatun-risba-artist-in-residence-at-steam-atelier/">Jatun Risba – Artist in residence at STEAM Atelier</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche/">Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/summer2019/">A summer in movement…</a>
+									</li>
+					</ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">A WordPress Commenter</a></span> on <a href="http://archive.artsofself.com/hello-world/#comment-1">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.hataygencradyo.net" rel="external nofollow ugc" class="url">hala duruyonmu sen?</a></span> on <a href="http://archive.artsofself.com/interview-on-trance-and-performance-art/#comment-10">Interview on trance and performance art</a></li><li class="recentcomments"><span class="comment-author-link">Carla Kindler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-7">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Billy Hutcheon</span> on <a href="http://archive.artsofself.com/kontakt/#comment-6">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Jani Haszler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-5">KONTAKT</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+				<li><a href="http://archive.artsofself.com/2020/05/">May 2020</a></li>
+	<li><a href="http://archive.artsofself.com/2019/07/">July 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/06/">June 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/03/">March 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/02/">February 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/01/">January 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2018/09/">September 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/08/">August 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/07/">July 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/01/">January 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2017/12/">December 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/11/">November 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/10/">October 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/08/">August 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/04/">April 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/03/">March 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/02/">February 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/01/">January 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2016/08/">August 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/06/">June 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/05/">May 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/04/">April 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/02/">February 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/01/">January 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2015/12/">December 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/11/">November 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/10/">October 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/08/">August 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/07/">July 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/06/">June 2015</a></li>
+		</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+				<li class="cat-item cat-item-21"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodene-risbe/">Duhovodene risbe</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodeni-ples/">Duhovodeni ples</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/">Duhovodenost</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://archive.artsofself.com/category/forma-viva/">Forma Viva</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://archive.artsofself.com/category/tehnologije-us/inter-esse/">Inter-esse</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://archive.artsofself.com/category/tehnologije-us/javno-privatna-korespondenca/">Javno-privatna korespondenca</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/">Jutranje misli in samospraševanje</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/jutranje-misli-objave/">Jutranje misli objave</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://archive.artsofself.com/category/korespondenca-objave/">Korespondenca objave</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://archive.artsofself.com/category/mri-ms/">MRI MS</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/">Performativni dogodki</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/pot-kzdravljenja/">Pot kzdravljenja</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/">Preobratni slovar</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/preobratni-slovar-objave/">Preobratni slovar objave</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/samosprasevanje-objave/">Samospraševanje objave</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://archive.artsofself.com/category/tehnologije-us/">Tehnologije US</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://archive.artsofself.com/category/uncategorized/">Uncategorized</a>
+</li>
+		</ul>
+			</aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://archive.artsofself.com/wp-login.php">Log in</a></li>
+			<li><a href="http://archive.artsofself.com/feed/">Entries feed</a></li>
+			<li><a href="http://archive.artsofself.com/comments/feed/">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>		</div>
+		</div>
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div>
+	</footer>
+</div>
+
+<script>
+	window.addEventListener('sfsi_plus_functions_loaded', function() {
+		if (typeof sfsi_plus_responsive_toggle == 'function') {
+			sfsi_plus_responsive_toggle(0);
+			console.log('sfsi_plus_responsive_toggle');
+
+		}
+	})
+</script>
+
+<link rel="stylesheet" id="basecss-css" href="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/jquery.shuffle.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/random-shuffle-min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sfsi_plus_ajax_object = {"ajax_url":"http:\/\/archive.artsofself.com\/wp-admin\/admin-ajax.php","plugin_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/"};
+var sfsi_plus_links = {"admin_url":"http:\/\/archive.artsofself.com\/wp-admin\/","plugin_dir_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/","pretty_perma":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/custom.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/themes/twentytwelve/js/navigation.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var eucookielaw_data = {"euCookieSet":"1","autoBlock":"0","expireTimer":"0","scrollConsent":"0","networkShareURL":"","isCookiePage":"","isRefererWebsite":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/js/scripts.js"></script>
+<script type="text/javascript">
+          (function() {
+            var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+            t.parentNode.insertBefore(s, t);
+          })();
+        </script></body>
+</html>

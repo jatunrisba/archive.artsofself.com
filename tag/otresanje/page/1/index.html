@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>otresanje | artsofself</title>
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="http://archive.artsofself.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_fonts-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/bwg-fonts/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="sumoselect-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/sumoselect.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mCustomScrollbar-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_googlefonts-css" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=greek,latin,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" type="text/css" media="all">
+<link rel="stylesheet" id="bwg_frontend-css" href="http://archive.artsofself.com/wp-content/plugins/photo-gallery/css/styles.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="SFSIPLUSmainCss-css" href="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/css/sfsi-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="http://archive.artsofself.com/wp-content/themes/twentytwelve/style.css" type="text/css" media="all">
+
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.sumoselect.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/jquery.fullscreen-0.4.1.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_validation":"This is not a valid email address.","bwg_search_result":"There are no images matching your search.","bwg_select_tag":"Select Tag","bwg_order_by":"Order By","bwg_search":"Search","bwg_show_ecommerce":"Show Ecommerce","bwg_hide_ecommerce":"Hide Ecommerce","bwg_show_comments":"Show Comments","bwg_hide_comments":"Hide Comments","bwg_restore":"Restore","bwg_maximize":"Maximize","bwg_fullscreen":"Fullscreen","bwg_exit_fullscreen":"Exit Fullscreen","bwg_search_tag":"SEARCH...","bwg_tag_no_match":"No tags found","bwg_all_tags_selected":"All tags selected","bwg_tags_selected":"tags selected","play":"Play","pause":"Pause","is_pro":"","bwg_play":"Play","bwg_pause":"Pause","bwg_hide_info":"Hide info","bwg_show_info":"Show info","bwg_hide_rating":"Hide rating","bwg_show_rating":"Show rating","ok":"Ok","cancel":"Cancel","select_all":"Select all","lazy_load":"0","lazy_loader":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/photo-gallery\/images\/ajax_loader.png","front_ajax":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/photo-gallery/js/scripts.min.js"></script>
+
+
+
+<script>
+	window.addEventListener("sfsi_plus_functions_loaded",function(){
+		var body= document.getElementsByTagName('body')[0];
+		console.log(body);
+		body.classList.add("sfsi_plus_3.26");
+	})
+	// window.addEventListener('sfsi_plus_functions_loaded',function(e) {
+	// 	jQuery("body").addClass("sfsi_plus_3.26")
+	// });
+
+	function sfsi_plus_processfurther(ref) {
+		var feed_id = '';
+		var feedtype = 8;
+		var email = jQuery(ref).find('input[name="data[Widget][email]"]').val();
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if ((email != "Enter your email") && (filter.test(email))) {
+			if (feed_id != "") {
+				if (feedtype == "8") {
+					var url = "https://www.specificfeeds.com/widgets/subscribeWidget/" + feed_id + "/" + feedtype;
+					window.open('', "popupwindow", "scrollbars=yes,width=1080,height=760");
+					ref.target = "popupwindow";
+					ref.action = url;
+					return true;
+				} else {
+					return false;
+				}
+			}
+		} else {
+			alert("Please enter email address");
+			jQuery(ref).find('input[name="data[Widget][email]"]').focus();
+			return false;
+		}
+	}
+</script>
+<style>
+	.sfsi_plus_subscribe_Popinner {
+		width: 100% !important;
+		height: auto !important;
+		border: 1px solid #b5b5b5 !important;
+		padding: 18px 0px !important;
+		background-color: #ffffff !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner form {
+		margin: 0 20px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner h5 {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		margin: 0 0 10px !important;
+		padding: 0 !important;
+	}
+
+	.sfsi_plus_subscription_form_field {
+		margin: 5px 0 !important;
+		width: 100% !important;
+		display: inline-flex;
+		display: -webkit-inline-flex;
+	}
+
+	.sfsi_plus_subscription_form_field input {
+		width: 100% !important;
+		padding: 10px 0px !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-moz-placeholder {
+		/* Firefox 18- */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]::-moz-placeholder {
+		/* Firefox 19+ */
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-style: normal !important;
+		color: #000000 !important;
+		font-size: 14px !important;
+		text-align: center !important;
+	}
+
+	.sfsi_plus_subscribe_Popinner input[type=submit] {
+		font-family: Helvetica,Arial,sans-serif !important;
+
+		font-weight: bold !important;
+		color: #000000 !important;
+		font-size: 16px !important;
+		text-align: center !important;
+		background-color: #dedede !important;
+	}
+</style>
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="archive tag tag-otresanje tag-418 do-etfw custom-font-enabled">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://archive.artsofself.com/" title="artsofself" rel="home">artsofself</a></h1>
+			<h2 class="site-description">Just another WordPress site</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul>
+<li><a href="http://archive.artsofself.com/">Home</a></li><li class="page_item page-item-920"><a href="http://archive.artsofself.com/about/">ABOUT</a></li>
+<li class="page_item page-item-1118"><a href="http://archive.artsofself.com/inter-esse/">INTER-ESSE</a></li>
+<li class="page_item page-item-1574"><a href="http://archive.artsofself.com/jatun-risba/">Jatun Risba</a></li>
+<li class="page_item page-item-1127"><a href="http://archive.artsofself.com/likovno-izrazanje/">Likovno izražanje</a></li>
+<li class="page_item page-item-1310"><a href="http://archive.artsofself.com/mri-ms/">MRI MS</a></li>
+<li class="page_item page-item-495 page_item_has_children"><a href="http://archive.artsofself.com/predstavitev/">O US</a>
+<ul class="children">
+	<li class="page_item page-item-67"><a href="http://archive.artsofself.com/predstavitev/us-so-ker-niso/">US SO, KER NISO</a></li>
+	<li class="page_item page-item-11"><a href="http://archive.artsofself.com/predstavitev/postani-umetnik-sebstva/">POSTANI UMETNIK SEBSTVA</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2"><a href="http://archive.artsofself.com/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-72 page_item_has_children"><a href="http://archive.artsofself.com/tehnologije/">TEHNOLOGIJE</a>
+<ul class="children">
+	<li class="page_item page-item-74"><a href="http://archive.artsofself.com/tehnologije/detournement/">DÉTOURNEMENT</a></li>
+	<li class="page_item page-item-86"><a href="http://archive.artsofself.com/tehnologije/fokusologija/">FOKUSOLOGIJA</a></li>
+	<li class="page_item page-item-1091"><a href="http://archive.artsofself.com/tehnologije/forma-viva/">FORMA VIVA</a></li>
+	<li class="page_item page-item-90"><a href="http://archive.artsofself.com/tehnologije/imagazinacija/">IMAGAZINACIJA</a></li>
+	<li class="page_item page-item-89"><a href="http://archive.artsofself.com/tehnologije/izleti-in-ture/">IZLETI IN TURE</a></li>
+	<li class="page_item page-item-96"><a href="http://archive.artsofself.com/tehnologije/korespondenca/">JAVNO-PRIVATNA KORESPONDENCA</a></li>
+	<li class="page_item page-item-107"><a href="http://archive.artsofself.com/tehnologije/jutranje-misli-in-samosprasevanje/">JUTRANJE MISLI in SAMOSPRAŠEVANJE</a></li>
+	<li class="page_item page-item-101"><a href="http://archive.artsofself.com/tehnologije/sprehodialogi/">MAJEVTIČNI SPREHODIALOGI</a></li>
+	<li class="page_item page-item-117"><a href="http://archive.artsofself.com/tehnologije/preobratni-slovar/">PREOBRATNI SLOVAR</a></li>
+	<li class="page_item page-item-122"><a href="http://archive.artsofself.com/tehnologije/strahopremet/">STRAHOPREMET</a></li>
+	<li class="page_item page-item-126"><a href="http://archive.artsofself.com/tehnologije/zvezek-idej/">ZVEZEK IDEJ</a></li>
+</ul>
+</li>
+<li class="page_item page-item-287"><a href="http://archive.artsofself.com/pomagala/">POMAGALA</a></li>
+<li class="page_item page-item-134"><a href="http://archive.artsofself.com/besednjak/">BESEDNJAK</a></li>
+<li class="page_item page-item-26 page_item_has_children"><a href="http://archive.artsofself.com/eticni-kodeks/">ETIČNI KODEKS</a>
+<ul class="children">
+	<li class="page_item page-item-40"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-mediji/">US IN MEDIJI</a></li>
+	<li class="page_item page-item-43"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-festivali/">US IN FESTIVALI</a></li>
+	<li class="page_item page-item-53"><a href="http://archive.artsofself.com/eticni-kodeks/us-in-avtorsko-pravo/">US IN AVTORSKO PRAVO</a></li>
+</ul>
+</li>
+<li class="page_item page-item-139"><a href="http://archive.artsofself.com/predhodniki/">PREDHODNIKI</a></li>
+<li class="page_item page-item-149"><a href="http://archive.artsofself.com/zahvale/">ZAHVALE</a></li>
+<li class="page_item page-item-130 page_item_has_children"><a href="http://archive.artsofself.com/kontakt/">KONTAKT</a>
+<ul class="children">
+	<li class="page_item page-item-128"><a href="http://archive.artsofself.com/kontakt/o-avtorju-strani/">O AVTORJU STRANI</a></li>
+</ul>
+</li>
+</ul></div>
+		</nav>
+
+			</header>
+
+	<div id="main" class="wrapper">
+
+	<section id="primary" class="site-content">
+		<div id="content" role="main">
+
+					<header class="archive-header">
+				<h1 class="archive-title">Tag Archives: <span>otresanje</span></h1>
+
+						</header>
+
+			
+	<article id="post-674" class="post-674 post type-post status-publish format-standard hentry category-jutranje-misli-in-samosprasevanje category-samosprasevanje-objave tag-arena tag-centralnost tag-drugacno tag-fiasko tag-gledalisce tag-grotowski tag-hip-hop-glasba tag-hip-hop-kultura tag-hologram tag-izmenjava tag-jam-krogi tag-konec tag-minulo tag-ne-se tag-neprilagojenost tag-nova-gorica tag-novo tag-odlicnost tag-ogledalo tag-otresanje tag-partikularnost tag-pasje tag-performativni-dogodek tag-posameznik tag-praznost tag-preobrazba tag-preteklost tag-preziveto tag-psi tag-revno-gledalisce tag-rotacija tag-rotiranje tag-satir tag-spreminjanje tag-srecanje tag-srediscnost tag-svoboda tag-tudi tag-ucenje tag-umetnik-sebstva tag-univerzalnost tag-zacetek">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="http://archive.artsofself.com/samosprasevanje-ob-otresanju/" rel="bookmark">Samospraševanje ob prvem dogodku otresanja</a>
+			</h1>
+										<div class="comments-link">
+					<a href="http://archive.artsofself.com/samosprasevanje-ob-otresanju/#respond"><span class="leave-reply">Leave a reply</span></a>				</div>
+					</header>
+
+				<div class="entry-content">
+			<p><strong><em>Česa sem se otresla na prvem dogodku umetnosti sebstva? (27.6.15)</em></strong></p>
+<ol>
+<li><strong> Želje in potrebe po priklicevanju duhov iz preteklosti</strong></li>
+</ol>
+<p>Prepričala sem se o tem, da sem svoj <strong>»skok na trampolinu sprememb« </strong> (beri adolescenčne travme in sledeče izkustvo poti k zdravju)<strong> že speljala do konca</strong>. Vsako intencionalno obujanje opravljenega virtuozizma je danes nepotrebno in neproduktivno, predvsem pa nesmiselno. <strong>Prehodni obred</strong> <a href="http://www.napovednik.com/dogodek308540_happening_pot_k_zdravju_onkraj_dobrega_in_zlega" target="_blank" rel="noopener noreferrer">Pot k zdravja</a>, izveden v Rogu v Ljubljani 12.10.2014, mi je omogočil briljantno izvedbo svojega rano* mladostniškega salta mortala, ki se je zaključil s pristankom na obe stopali in plesom. Vsak poskus ponovitve alkimije tistega dejanja danes deluje izumetničeno in kvečjemu kontra produktivno, ker ustvarja lažno podobo, da pristanka na noge še nisem opravila. Kaj zdaj?</p>
+<p><strong>Pridobljeno vedenje</strong> o moči ritualnih dejanj ter o zakonitostih hranjenja emocij in informacij razmišljujočega telesa, naj mi služi kot <strong>izkustvo za svoje nadaljnje ustvarjanje in delovanje</strong>. A šlo je še za nekaj globljega …</p>
+<p><strong>Kakšen odnos naj vzpostavim zdaj z izkušnjo, ki je usmerjala moje celotno življenje za dolgo obdobje, v trenutku, ko ni več aktualna?</strong> Kdo sem jaz zdaj, brez stebra, ki je predstavljal os mojega sebstva za obdobje dolgih sedmih let? Kako naj se vidim, pravim in dojemam sedaj, ko te koordinatne premice preprosto ni več v meni, ko nimam več nobenih vnaprejšnjih omejujočih usmeritev? Zdaj, ko sem resnično svobodna, da živim tako kot hočem in kjerkoli hočem?</p>
+<p><a href="https://flic.kr/p/dZpLRw"><img src="https://farm9.staticflickr.com/8237/8525959952_58e9af5896_n.jpg" alt="Turda Gorges" width="320" height="213"></a></p>
+<p>Ugledala sem, kako sem do petkovega otresanja iz <strong>udobne navade</strong>, še kar naprej visela pripeta na veje nekdanjega kataklizmičnega holograma, četudi sem spretno poplesavala po blišču njegovega prahu. In kakor skala, ki se odtrga vrh stene in med spuščanjem v dolino za seboj potegne in zdrobi vse, kar ji prečka pot, tako mi je sprožena reka olajšanja odplavila iz telesa še zadnje kosti preteklosti, ki sem jih s spominjam in gledanjem predolgo hranila v svojem razmišljujočem telesu. <em>Zbogom!</em></p>
+<p><strong>Tehnologijo <a href="http://artsofself.com/tehnologije/jutranje-misli-in-samoizprasevanje/">samospraševanja</a></strong> (Kdo sem jaz brez minulega/preživetega/zaključenega? Kakšne možnosti se mi odpirajo sedaj?) lahko uporabimo <strong>ob izstopu iz katerihkoli odnosov</strong>: prijateljskih, poslovnih ali partnerskih. Koristi nam tudi <strong>ob prekinitvi specifičnih bolezenskih</strong> (ozdravitev in konec bolezni) <strong>in finančnih stanj</strong> (nastop finančne trdnosti ali bogastva in konec prekerstva ali revščine), saj nas <strong>pripravi na vstop v sveže in novo</strong>, ki se ga šele učimo celostno sprejeti in ponotranjiti.</p>
+<p>Prvo veliko dejanje petkovega dogodka je bilo OTRESANJE OD PREŽIVETEGA.<strong> Poslavljanje od preteklega</strong>, ki ni več del našega trenutnega sebstva. <em style="line-height: 1.714285714; font-size: 1rem;">Pusti, da gre preteklo stran. Odlepi ga s telesa, zahvali se mu, mu zažvižgaj srečno pot, ti pa … le naprej, naprej</em><span style="line-height: 1.714285714; font-size: 1rem;">.</span></p>
+<p><a href="https://flic.kr/p/dZj3vB"><img src="https://farm9.staticflickr.com/8104/8524841949_11ba6f470e_n.jpg" alt="Turda Gorges" width="320" height="213"></a></p>
+<p>* Obrobna jezikovna iskrica: Je morebiti rana mladost, oziroma zgodnost (»ranost«) vsakega človeškega obdobja ali udejstvovanja, tudi čas številnih ran?<strong> </strong></p>
+<p> </p>
+<p> </p>
+<ol start="2">
+<li><strong>Iluzije svojega univerzalizma.</strong></li>
+</ol>
+<p>Življenje me je pripeljalo  do tega, da razmišljam in se obnašam nonšalantno: neobremenjeno in divje svobodno. To je na eni strani karakteristika moje popotniške nravi, mojega tupatam razpotegnjenega življenja ter rezultat otresanja svojih želj po ustrežljivosti in ugajanju drugim, na drugi.</p>
+<p>Vendar to, da meni ni mar za trebišča (beseda označuje kraj za izvedbo obredov žrtvovanja) kolektivne zavesti, njegovih regulativ brezosebnega seja: se dela, se govori, se obnaša, itd.,  ne pogojuje tega, da se tudi ostali ne ozirajo na mnenja drugih. Izhodišča njihovih oblik življenja se namreč razlikujejo od mojega. Poleg tega je razmeroma preprosto živeti svobodno v situaciji, ko ne gojiš nobenega stalnega odnosa. Ko je vse, kar imaš in vse kar živiš v duhu začasnosti in konstantnega spreminjanja. Težje je prakticirati takšno odprtost ob stalni službi, partnerski zvezi ali starševstvu.</p>
+<p><strong>Zavedanje o obširni raznolikosti</strong> posameznikov te spodbudi, da upreš pogled v sebi oddaljena, manj poznana obzorja. Zapaženo drugačnost lahko tedaj uporabiš <strong>kot vzgon za učenje, samopremagovanje in rast.</strong> Drugi akt večera je služil OTRESANJU ILUZIJ O UNIVERZALIZMU radikalne partikularnosti POSAMEZNIKA.</p>
+<p><a href="https://flic.kr/p/4LQkqB"><img src="https://farm3.staticflickr.com/2353/2476426847_36ba377212_z.jpg?zz=1" alt="EL PATIO DE MI CASA ES PARTICULAR, CUANDO LLUEVE SE MOJA COMO LOS DEMÁS" width="514" height="640"></a></p>
+<p> </p>
+<ol start="3">
+<li><strong> Paradigme (uprizoritvenih) umetnosti</strong></li>
+</ol>
+<p>Moj proces <strong>osvobajanje od normativ in pravil sodobnih institucij umetnosti</strong> in zavestni izstop iz njih parterja, se je začel s sodelovanjem na okrogli mizi “<em>Out of the fiction of protest. Art and political activism</em>«, ki je potekala  24. maja 2009 v Milanu. Kulminacijo pa doživela v čistopisu povedanega v članku <a href="http://www.digicult.it/it/digimag/issue-045/a_ctivism/" target="_blank" rel="noopener noreferrer">A_tivismo</a> (v <a href="http://www.digicult.it/digimag/issue-045/a_ctivism/" target="_blank" rel="noopener noreferrer">ang</a>). Odločitev o nedelovanju znotraj retoričnih aparatov in prizorišč sodobnih umetnosti je bil povod za moje kasnejše  <strong>zanimanje za ljudske umetnosti predindustrijskih družb</strong>, ki sem jih odkrivala med svojim zadnjim bivanjem v Etiopiji. Umetnosti sebstva predstavljajo zadnji stadij taiste poti otresanja od institucionaliziranih načinov ustvarjanja in koriščenja umetnosti.</p>
+<p>Čas od aprila 2015 do danes sem vložila v preučevanje, analiziranje in preizkušanje najbolj prvinskega in drznega v zgodovini in antropologiji performansa. <strong>Dekonstrukcija</strong>, ki sem jo opravila je presegla radikalnost Grotowskovega revnega gledališča. Poglejmo kako. Grotowski je do postulatov revnega gledališča prilezel prek spoznanja o bogatosti sodobnega gledališča: bogastva njegovih številnih zmot. Zato se je lotil <strong>odstranjevanje vsega odvečnega in nepotrebnega</strong>, s čimer ima sodobno gledališče opravka: scenografije, odra, mask, … dokler se ni prepričal, da sta v gledališču zares potrebni le dve stvari: igralec in publika. <strong>Redukcija performativnega dejanja US</strong> se ni ustavila dokler ni <strong>odstranila vsega, razen osebe</strong> (in ne igralca)<strong> v aktu darovanja</strong>.</p>
+<p><a href="https://flic.kr/p/7bJWeH"><img src="https://farm3.staticflickr.com/2544/4059682723_900f91f1e2.jpg" alt="grotowski_Acropolis_320" width="320" height="190"></a></p>
+<p> </p>
+<p>Za začetek sem kraj izvedbe <a href="http://artsofself.com/besednjak/">totalnega akta </a>i<strong>z gledališča prestavila v javni prostor</strong> (zelenica v jedru zaselka) ter ustvarila prikupno<strong> zastonjsko površino za sedenje</strong>: trak iz recikliranih plastičnih vrečk v obliki kroga. Do tu je vse smiselno in logično, saj sem se že v premisi performativnih dogodkov US otresla ekskluzivnosti institucije gledališča in dispozitiva predstav. Zatem sem v kontekstih vsakdanjega življenja prežala na <strong>čimbolj heterogeno skupnost</strong> potencialnih soustvarjalcev umetnosti sebstva (publika v Grotowskovi izvedbi gledališča, gledigralci v Boalovi). Pri tem pa spregledala prvobitno razkošje sodobnih umetnosti, ki sem se ga še vedno posluževala<strong>: centralnost in neprilagodljivost figure sodobnega umetnika</strong>. Še več, celo svojevrsten stroj za njuno podkrepitev sem ustvarila.</p>
+<p>Konstelacija US je svojo delitev javnosti doživela šele pred tednom dni. Trenutno sem edini predstavnik, raziskovalec in ustvarjalec umetnosti sebstva. Skupnost, ki jo vidim in nagovarjam, je v danosti zgolj vizualizacija želenega. Danes poleg mene še ni drugih, ki bi zavestno uporabljali tehnologije in diskurze umetnosti sebstva. Ubrana formula performativnih dogodkov, ki naj bi ustvarjala priložnost za srečevanje praktikantov US, je preveč virtualno formulirana, da bi lahko zaživela v tu in zdaj. Petkov dogodek ni upošteval specifik dejanskega stanja razmer ter posledično izpadel irealno.</p>
+<p>Če se ozrem še nekoliko dlje, opazim, da sem centralnost umetnika, ki sem jo želela zabrisati in prerasti, poustvarila že <strong>z izbiro uporabe prizorišča</strong>. Skrpana plastična krožnica je v petek služila kot sedišče za prišleke. Prostor znotraj nje pa je deloval kot arena, znotraj katere je neukročeno, kakor Dionizov satir,  poskakoval, se pačil in razgrajal umetnik sebstva. To  »sonce«, ki je bilo tako radodarno, da se je brez problematiziranja dinamik središčnosti, postavilo, kam drugam kot v center kroga, okoli katerega naj posedajo drugi. Kako očiten znak, da se še nisem otresla konstruktov predstave, publike in performativnega umetnika, na katerih temelji sodobna institucija uprizoritvenih umetnosti. Izučilo me je, da <strong>iskani zunajumetniški preobrat</strong> pogojuje to, da je center kroga … PRAZEN.</p>
+<p><a href="https://flic.kr/p/5wsP6j"><img src="https://farm4.staticflickr.com/3073/2970153280_13ea518738_n.jpg" alt="18 Hands, 1 Star" width="320" height="240"></a></p>
+<p> </p>
+<p>Pred očmi so se mi zaiskrile dinamike<strong><a href="https://youtu.be/bnkvvmDA4nU" target="_blank" rel="noopener noreferrer"> jam kroga</a></strong>, ki ga pozna hip-hop plesna kultura. To je s telesi ustvarjen krog hip-hop plesalcev, ki se spontano oblikuje v času glasbenih dogodkov omenjene zvrsti. Na začetku je center kroga prazen, nato vanj svobodno vstopajo plesalci, ki hočejo prikazati svoje najnovejše plesne trike. Osnovno vodilo je, da v center vstopiš samo, ko si tega želiš. Takrat, ko začutiš navdih in hrepenenje po deljenju svojih gibov z ostalimi soplesalci. V sredini se zadržiš, dokler ne zaključiš svoje demonstracije, oziroma dokler te nosi visokofrekvenčni veter plesne inspiracije. Nato izstopiš in predaš plesno štafeto naslednjemu plesalcu, po <strong>horizontalno rotacijskem principu</strong> delovanja.</p>
+<p><strong>Performativni dogodek naj bi proizvajal srečanja soustvarjalecev US</strong>, ki si želijo izmenjave izkušenj z ostalimi praktikanti in radovedneži. <strong>Krog bi bil na začetku in na koncu srečanja prazen</strong>. Umetniki sebstva bi vanj vstopali zgolj za čas in za namen svoje javne delitve izkušenj, vizij in dognanj. Tako sem se v petek OTRESLA tudi NEBULOZE CENTRALNOSTI UMETNIKA (SEBSTVA).</p>
+<p>Ker je <strong>vrednost odličnosti fiaska</strong> (glej video <a href="http://artsofself.com/sprosti-se/">On failure</a>) enakovredna količini užitka in deljenja, ki ga dogodek proizvede, pristavljam šaljivo anekdoto, ki priča o moji petkovi neprilagojenosti na okolje, v katerem sem intervenirala. Kraj prvega dogodka je bila Nova Gorica, natančneje zelenica v centru mesta. Navkljub svoji relativni majhnosti, je Nova Gorica urbano okolje in ne podeželje. Mestni travniki pa se uporabljajo in živijo drugače kot podeželski travniki v Etiopiji ali na Krasu, ki so inspirirali moje vizije primernih lokacij za dogodek. <strong>Urbani coni</strong> sem torej nepremišljeno <strong>vsiljevala normative ruralnih krajev</strong>. Pri tem pa preletela dejstvo, da so zelenice v mestu predvsem javna stranišča za pse in ne parki za druženje.</p>
+<p><a href="https://flic.kr/p/rqSEgQ"><img src="https://farm8.staticflickr.com/7717/16690399454_f4f127b22e_n.jpg" alt="18-52 Exhaustion" width="320" height="182"></a></p>
+<p> </p>
+<p>Med bosonogim <a href="http://artsofself.com/tehnologije/duhovodenost/">duhovodenim plesom</a> sem bila hitro opozorjena, da je zemlja po kateri se sukam, pasji teritorij. V nozdrvi mi je pritekal vonj odstranjenih pasjih iztrebkov, a jaz sem še kar naprej – ko nekaj začneš, moraš vendar nadaljevati – grebla po tisti psovani zemlji ter se počutila kakor K. (protagonist Kafkovega Gradu) med ljubljenjem s Friedo na od piva in druge nesnage umazanih gostinskih tleh.</p>
+<blockquote><p><em>»Tam sta ležala, vendar ne tako prepuščena drug drugemu kakor tedaj ponoči. Ona je nekaj iskala in on je nekaj iskal, divje, kremžila sta se, silila sta z glavo v prsi drug drugemu, iskala sta in njuni telesi, ki sta se metali drugo na drugo, ju nista pripravili, da bi pozabila, ampak sta ju spominjali na dolžnost, da iščeta; kakor psi obupano grebejo po tleh, tako sta grebla po svojih telesih; bila sta zapuščena, razočarana, in da bi si vzela še zadnjo srečo, sta šla njuna jezika večkrat drugemu čez obraz« (str. 107).</em></p></blockquote>
+<p><strong>Zahvaljujem se gostom dogodka</strong>, da so mi <strong>pridržali ogledalo</strong>, v katerem sem ugledala to, kar nisem več in to, kar še nisem. NE ŠE.  A sčasoma bom. Vedno bolj in vedno boljše TUDI to. Hvala!</p>
+<p> </p>
+<p class="wp-flattr-button"></p>					</div>
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/" rel="category tag">Jutranje misli in samospraševanje</a>, <a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/samosprasevanje-objave/" rel="category tag">Samospraševanje objave</a> and tagged <a href="http://archive.artsofself.com/tag/arena/" rel="tag">arena</a>, <a href="http://archive.artsofself.com/tag/centralnost/" rel="tag">centralnost</a>, <a href="http://archive.artsofself.com/tag/drugacno/" rel="tag">drugačno</a>, <a href="http://archive.artsofself.com/tag/fiasko/" rel="tag">fiasko</a>, <a href="http://archive.artsofself.com/tag/gledalisce/" rel="tag">gledališče</a>, <a href="http://archive.artsofself.com/tag/grotowski/" rel="tag">Grotowski</a>, <a href="http://archive.artsofself.com/tag/hip-hop-glasba/" rel="tag">hip hop glasba</a>, <a href="http://archive.artsofself.com/tag/hip-hop-kultura/" rel="tag">hip hop kultura</a>, <a href="http://archive.artsofself.com/tag/hologram/" rel="tag">hologram</a>, <a href="http://archive.artsofself.com/tag/izmenjava/" rel="tag">izmenjava</a>, <a href="http://archive.artsofself.com/tag/jam-krogi/" rel="tag">jam krogi</a>, <a href="http://archive.artsofself.com/tag/konec/" rel="tag">konec</a>, <a href="http://archive.artsofself.com/tag/minulo/" rel="tag">minulo</a>, <a href="http://archive.artsofself.com/tag/ne-se/" rel="tag">ne še</a>, <a href="http://archive.artsofself.com/tag/neprilagojenost/" rel="tag">neprilagojenost</a>, <a href="http://archive.artsofself.com/tag/nova-gorica/" rel="tag">Nova Gorica</a>, <a href="http://archive.artsofself.com/tag/novo/" rel="tag">novo</a>, <a href="http://archive.artsofself.com/tag/odlicnost/" rel="tag">odličnost</a>, <a href="http://archive.artsofself.com/tag/ogledalo/" rel="tag">ogledalo</a>, <a href="http://archive.artsofself.com/tag/otresanje/" rel="tag">otresanje</a>, <a href="http://archive.artsofself.com/tag/partikularnost/" rel="tag">partikularnost</a>, <a href="http://archive.artsofself.com/tag/pasje/" rel="tag">pasje</a>, <a href="http://archive.artsofself.com/tag/performativni-dogodek/" rel="tag">performativni dogodek</a>, <a href="http://archive.artsofself.com/tag/posameznik/" rel="tag">posameznik</a>, <a href="http://archive.artsofself.com/tag/praznost/" rel="tag">praznost</a>, <a href="http://archive.artsofself.com/tag/preobrazba/" rel="tag">preobrazba</a>, <a href="http://archive.artsofself.com/tag/preteklost/" rel="tag">preteklost</a>, <a href="http://archive.artsofself.com/tag/preziveto/" rel="tag">preživeto</a>, <a href="http://archive.artsofself.com/tag/psi/" rel="tag">psi</a>, <a href="http://archive.artsofself.com/tag/revno-gledalisce/" rel="tag">revno gledališće</a>, <a href="http://archive.artsofself.com/tag/rotacija/" rel="tag">rotacija</a>, <a href="http://archive.artsofself.com/tag/rotiranje/" rel="tag">rotiranje</a>, <a href="http://archive.artsofself.com/tag/satir/" rel="tag">satir</a>, <a href="http://archive.artsofself.com/tag/spreminjanje/" rel="tag">spreminjanje</a>, <a href="http://archive.artsofself.com/tag/srecanje/" rel="tag">srečanje</a>, <a href="http://archive.artsofself.com/tag/srediscnost/" rel="tag">središčnost</a>, <a href="http://archive.artsofself.com/tag/svoboda/" rel="tag">svoboda</a>, <a href="http://archive.artsofself.com/tag/tudi/" rel="tag">tudi</a>, <a href="http://archive.artsofself.com/tag/ucenje/" rel="tag">učenje</a>, <a href="http://archive.artsofself.com/tag/umetnik-sebstva/" rel="tag">umetnik sebstva</a>, <a href="http://archive.artsofself.com/tag/univerzalnost/" rel="tag">univerzalnost</a>, <a href="http://archive.artsofself.com/tag/zacetek/" rel="tag">začetek</a> on <a href="http://archive.artsofself.com/samosprasevanje-ob-otresanju/" title="10:00 am" rel="bookmark"><time class="entry-date" datetime="2015-06-28T10:00:30+00:00">June 28, 2015</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://archive.artsofself.com/author/jatun/" title="View all posts by jatun" rel="author">jatun</a></span></span>.								</footer>
+	</article>
+
+		
+		</div>
+	</section>
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://archive.artsofself.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+				</div>
+			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="http://archive.artsofself.com/hello-world/">Hello world!</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche-insight/">Insight into Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/jatun-risba-artist-in-residence-at-steam-atelier/">Jatun Risba – Artist in residence at STEAM Atelier</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/mpasturavacche/">Mpasturavacche</a>
+									</li>
+											<li>
+					<a href="http://archive.artsofself.com/summer2019/">A summer in movement…</a>
+									</li>
+					</ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">A WordPress Commenter</a></span> on <a href="http://archive.artsofself.com/hello-world/#comment-1">Hello world!</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.hataygencradyo.net" rel="external nofollow ugc" class="url">hala duruyonmu sen?</a></span> on <a href="http://archive.artsofself.com/interview-on-trance-and-performance-art/#comment-10">Interview on trance and performance art</a></li><li class="recentcomments"><span class="comment-author-link">Carla Kindler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-7">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Billy Hutcheon</span> on <a href="http://archive.artsofself.com/kontakt/#comment-6">KONTAKT</a></li><li class="recentcomments"><span class="comment-author-link">Jani Haszler</span> on <a href="http://archive.artsofself.com/kontakt/#comment-5">KONTAKT</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+				<li><a href="http://archive.artsofself.com/2020/05/">May 2020</a></li>
+	<li><a href="http://archive.artsofself.com/2019/07/">July 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/06/">June 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/03/">March 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/02/">February 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2019/01/">January 2019</a></li>
+	<li><a href="http://archive.artsofself.com/2018/09/">September 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/08/">August 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/07/">July 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2018/01/">January 2018</a></li>
+	<li><a href="http://archive.artsofself.com/2017/12/">December 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/11/">November 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/10/">October 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/08/">August 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/04/">April 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/03/">March 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/02/">February 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2017/01/">January 2017</a></li>
+	<li><a href="http://archive.artsofself.com/2016/08/">August 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/06/">June 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/05/">May 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/04/">April 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/02/">February 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2016/01/">January 2016</a></li>
+	<li><a href="http://archive.artsofself.com/2015/12/">December 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/11/">November 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/10/">October 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/08/">August 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/07/">July 2015</a></li>
+	<li><a href="http://archive.artsofself.com/2015/06/">June 2015</a></li>
+		</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+				<li class="cat-item cat-item-21"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodene-risbe/">Duhovodene risbe</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/duhovodeni-ples/">Duhovodeni ples</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://archive.artsofself.com/category/tehnologije-us/duhovodenost/">Duhovodenost</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://archive.artsofself.com/category/forma-viva/">Forma Viva</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://archive.artsofself.com/category/tehnologije-us/inter-esse/">Inter-esse</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://archive.artsofself.com/category/tehnologije-us/javno-privatna-korespondenca/">Javno-privatna korespondenca</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/">Jutranje misli in samospraševanje</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/jutranje-misli-objave/">Jutranje misli objave</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://archive.artsofself.com/category/korespondenca-objave/">Korespondenca objave</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://archive.artsofself.com/category/mri-ms/">MRI MS</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/">Performativni dogodki</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://archive.artsofself.com/category/tehnologije-us/performativni-dogodki/pot-kzdravljenja/">Pot kzdravljenja</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/">Preobratni slovar</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://archive.artsofself.com/category/tehnologije-us/preobratni-slovar/preobratni-slovar-objave/">Preobratni slovar objave</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://archive.artsofself.com/category/tehnologije-us/jutranje-misli-in-samosprasevanje/samosprasevanje-objave/">Samospraševanje objave</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://archive.artsofself.com/category/tehnologije-us/">Tehnologije US</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://archive.artsofself.com/category/uncategorized/">Uncategorized</a>
+</li>
+		</ul>
+			</aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://archive.artsofself.com/wp-login.php">Log in</a></li>
+			<li><a href="http://archive.artsofself.com/feed/">Entries feed</a></li>
+			<li><a href="http://archive.artsofself.com/comments/feed/">Comments feed</a></li>
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>			</ul>
+			</aside>		</div>
+		</div>
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div>
+	</footer>
+</div>
+
+<script>
+	window.addEventListener('sfsi_plus_functions_loaded', function() {
+		if (typeof sfsi_plus_responsive_toggle == 'function') {
+			sfsi_plus_responsive_toggle(0);
+			console.log('sfsi_plus_responsive_toggle');
+
+		}
+	})
+</script>
+
+<link rel="stylesheet" id="basecss-css" href="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="http://archive.artsofself.com/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/modernizr.custom.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/jquery.shuffle.min.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/shuffle/random-shuffle-min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sfsi_plus_ajax_object = {"ajax_url":"http:\/\/archive.artsofself.com\/wp-admin\/admin-ajax.php","plugin_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/"};
+var sfsi_plus_links = {"admin_url":"http:\/\/archive.artsofself.com\/wp-admin\/","plugin_dir_url":"http:\/\/archive.artsofself.com\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"http:\/\/archive.artsofself.com\/wp-json\/","pretty_perma":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/ultimate-social-media-plus/js/custom.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/themes/twentytwelve/js/navigation.js"></script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/easy-twitter-feed-widget/js/twitter-widgets.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var eucookielaw_data = {"euCookieSet":"1","autoBlock":"0","expireTimer":"0","scrollConsent":"0","networkShareURL":"","isCookiePage":"","isRefererWebsite":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://archive.artsofself.com/wp-content/plugins/eu-cookie-law/js/scripts.js"></script>
+<script type="text/javascript">
+          (function() {
+            var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+            t.parentNode.insertBefore(s, t);
+          })();
+        </script></body>
+</html>
